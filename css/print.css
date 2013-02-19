@@ -1,0 +1,25 @@
+body,
+.cart-header,
+.order-form-cart,
+.order-manager,
+.order-form-cart span,
+.order-form-info {color:#000 !important}
+
+.consultant-callback,
+.header-cart,
+.search,
+.catalogue-item-buy,
+.footer-menu,
+.footer-social-item,
+.cart-ctrl-back,
+.cart-ctrl-next,
+.order-steps,
+.order-user-name a,
+.product-block-social,
+.product-ctrl,
+.product-side-block-order,
+.product-side-block-social {display:none}
+
+.order-form-cart {padding-left:0}
+
+a {color:#000 !important; text-decoration:none !important}
