@@ -1,0 +1,448 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>DrNona</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <link rel="stylesheet" href="css/jquery-ui-1.8.23.custom.css" type="text/css" />
+
+        <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+        <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="js/jquery.animate-colors-min.js"></script>
+        <script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+        <script type="text/javascript" src="js/tools.js"></script>
+        
+        <meta name="viewport" content="width=1000" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="wrapper-inner">
+
+                <!-- header -->
+                <div class="header">
+
+                    <a href="#" class="logo"><img src="images/logo.png" alt="" width="216" height="73" /></a>
+
+                    <div class="title">Косметика Мертвого моря</div>
+
+                    <!-- consultant -->
+                    <div class="consultant">
+                        <div class="consultant-photo"><img src="files/consultant.jpg" alt="" width="70" height="70" /></div>
+                        <div class="consultant-name"><div>Консультант</div> Ольга</div>
+                        <div class="consultant-title">Позвоните, чтобы задать вопрос или оформить заказ</div>
+                        <div class="consultant-phone"><span>(495)</span> 345-12-23</div>
+                        <div class="consultant-callback">
+                            Перезвонить вам?<br />
+                            <a href="#" class="consultant-callback-link">Введите</a> номер телефона
+                            <div class="consultant-window">
+                                <div class="consultant-window-form">
+                                    <form action="#" method="post">
+                                        <div class="consultant-window-title">Представьтесь</div>
+                                        <div class="consultant-input"><input type="text" name="name" value="" class="required" /></div>
+                                        <div class="consultant-window-title">Телефон</div>
+                                        <div class="consultant-input"><input type="text" name="phone" value="" class="required" /></div>
+                                        <div class="consultant-window-ctrl">
+                                            <div class="consultant-window-submit"><input type="submit" value="Заказать звонок" /></div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="consultant-window-send">С Вами скоро свяжутся</div>
+                                <a href="#" class="consultant-close"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- consultant END -->
+
+                    <!-- header cart -->
+                    <div class="header-cart header-cart-full">
+                        <div class="header-cart-container">
+                            <div class="header-cart-icon"></div>
+                            <div class="header-cart-content">
+                                <div class="header-cart-content-top"></div>
+                                <div class="header-cart-content-middle">
+                                    <div class="header-cart-content-title">Ваша корзина</div>
+                                    <div class="header-cart-content-item">
+                                        <table>
+                                            <tr>
+                                                <td class="header-cart-content-item-photo"><a href="#"><img src="files/header-cart-1.jpg" alt="" width="32" height="52" /></a></td>
+                                                <td class="header-cart-content-item-content">
+                                                    <div class="header-cart-content-item-content-inner">
+                                                        <div class="header-cart-content-item-name"><a href="#">Лосьон для тела «солярис»</a> <span>(2 шт.)</span></div>
+                                                        <div class="header-cart-content-item-cost">3600р.</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="header-cart-content-item">
+                                        <table>
+                                            <tr>
+                                                <td class="header-cart-content-item-photo"><img src="files/header-cart-2.jpg" alt="" width="32" height="43" /></td>
+                                                <td class="header-cart-content-item-content">
+                                                    <div class="header-cart-content-item-content-inner">
+                                                        <div class="header-cart-content-item-name"><a href="#">Питальтельный лосьон для тела</a> <span>(1 шт.)</span></div>
+                                                        <div class="header-cart-content-item-cost">2400р.</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="header-cart-content-item">
+                                        <table>
+                                            <tr>
+                                                <td class="header-cart-content-item-photo"><img src="files/header-cart-3.jpg" alt="" width="32" height="48" /></td>
+                                                <td class="header-cart-content-item-content">
+                                                    <div class="header-cart-content-item-content-inner">
+                                                        <div class="header-cart-content-item-name"><a href="#">Динамический увлажняющий крем</a> <span>(1 шт.)</span></div>
+                                                        <div class="header-cart-content-item-cost">2400р.</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="header-cart-content-item">
+                                        <div class="header-cart-content-item-summ">Итого</div>
+                                        <div class="header-cart-content-item-cost">8700р.</div>
+                                    </div>
+                                    <div class="header-cart-content-link"><a href="#">Оформить заказ</a></div>
+                                </div>
+                                <div class="header-cart-content-bottom"></div>
+                            </div>
+                        </div>
+                        <div class="header-cart-text">
+                            <div class="header-cart-link"><a href="#">Корзина</a> <strong>(<span>3</span>)</strong></div>
+                            <div class="header-cart-summ"><span>8700</span> руб.</div>
+                            <div class="header-cart-delivery">Бесплатная доставка!</div>
+                        </div>
+                    </div>
+                    <!-- header cart END -->
+
+                </div>
+                <!-- header END -->
+
+                <!-- middle -->
+                <div class="middle">
+
+                    <!-- side -->
+                    <div class="side">
+
+                        <div class="order-detail-title">Ваш заказ <a href="#">Изменить</a></div>
+
+                        <!-- order detail -->
+                        <div class="order-detail">
+                            <div class="order-detail-row">
+                                <table><tr><td>
+                                    <div class="order-detail-name"><a href="#">Лосьон для тела «солярис»</a> <span>(2 шт)</span></div>
+                                    <div class="order-detail-price">3600р.</div>
+                                </td></tr></table>
+                            </div>
+                            <div class="order-detail-row">
+                                <table><tr><td>
+                                    <div class="order-detail-name"><a href="#">Динамический увлажняющий крем</a> <span>(1 шт)</span></div>
+                                    <div class="order-detail-price">900р.</div>
+                                </td></tr></table>
+                            </div>
+                            <div class="order-detail-row">
+                                <table><tr><td>
+                                    <div class="order-detail-name"><a href="#">Бальзам для век</a> <span>(1 шт)</span></div>
+                                    <div class="order-detail-price">2300р.</div>
+                                </td></tr></table>
+                            </div>
+                            <div class="order-detail-summ">
+                                <div class="order-detail-summ-name">Итого:</div>
+                                <div class="order-detail-summ-val">6800р.</div>
+                            </div>
+                        </div>
+                        <!-- order detail END -->
+
+                    </div>
+                    <!-- side END -->
+
+                    <!-- content -->
+                    <div class="content">
+
+                        <!-- order -->
+                        <div class="order">
+                            <h2>Оформление заказа</h2>
+
+                            <!-- order steps -->
+                            <div class="order-steps">
+                                <div class="order-steps-inner">
+                                    <div class="order-steps-content">
+                                        <ul>
+                                            <li class="curr"><div><span>1</span><strong>Контакты</strong></div></li>
+                                            <li><div><span>2</span><strong>Доставка</strong></div></li>
+                                            <li><div><span>3</span><strong>Оплата</strong></div></li>
+                                            <li><div><span>4</span><strong>Подтверждение</strong></div></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- order steps END -->
+
+                            <!-- order user -->
+                            <div class="order-user">
+                                <div class="order-user-form">
+                                    <form action="#" method="post">
+                                        <div class="order-user-form-title">Уже покупали у нас?</div>
+                                        <div class="order-user-form-hint">Введите свой e-mail и пароль и получите <span>скидку</span> постоянного покупателя</div>
+                                        <div class="order-user-row">
+                                            <div class="order-user-input"><span>E-mail</span><input type="text" name="email" value="" /></div>
+                                            <div class="order-user-input"><span>Пароль</span><input type="password" name="password" value="" /></div>
+                                            <div class="order-user-submit"><input type="submit" value="Войти и продолжить" /></div>
+                                        </div>
+                                        <div class="order-user-row-links">
+                                            <a href="#" class="order-user-row-link-forgot">Забыли пароль?</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- order user END -->
+
+                            <!-- order form -->
+                            <div class="order-form">
+                                <form action="#" method="post">
+
+                                    <!-- order form group -->
+                                    <div class="order-form-group">
+                                        <div class="order-form-group-title">Контакты</div>
+                                        <div class="order-form-row">
+                                            <div class="order-form-label">ФИО</div>
+                                            <div class="order-form-input">
+                                                <input type="text" name="name" value="" class="required" />
+                                            </div>
+                                        </div>
+                                        <div class="order-form-row">
+                                            <div class="order-form-label">E-mail</div>
+                                            <div class="order-form-input">
+                                                <input type="text" name="email" value="" class="required email" />
+                                            </div>
+                                        </div>
+                                        <div class="order-form-row">
+                                            <div class="order-form-label">Пароль</div>
+                                            <div class="order-form-input">
+                                                <input type="password" name="password" value="" />
+                                                <div class="order-form-hint">Введите пароль и получите скидку 3% на все продукты!</div>
+                                            </div>
+                                        </div>
+                                        <div class="order-form-row">
+                                            <div class="order-form-label">Телефон</div>
+                                            <div class="order-form-input">
+                                                <input type="text" name="phone" value="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- order form group END -->
+
+                                    <div class="order-form-next">
+                                        <input type="submit" value="Перейти к следующему шагу" />
+                                    </div>
+
+                                </form>
+                            </div>
+                            <!-- order form END -->
+
+                            <!-- order other steps -->
+                            <div class="order-other-steps">
+
+                                <!-- order form group -->
+                                <div class="order-form-group" id="order-form-delivery">
+                                    <div class="order-form-group-title">Доставка</div>
+                                    <div class="order-form-row">
+                                        <div class="order-form-label">Город</div>
+                                        <div class="order-form-input">
+                                            <input type="text" name="city" value="" class="required" />
+                                        </div>
+                                    </div>
+                                    <div class="order-form-row">
+                                        <div class="order-form-label">Адрес</div>
+                                        <div class="order-form-input">
+                                            <input type="text" name="address" value="" class="required" />
+                                        </div>
+                                    </div>
+                                    <div class="order-form-row">
+                                        <div class="order-form-label">Комментарий</div>
+                                        <div class="order-form-input">
+                                            <textarea rows="5" cols="10"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- order form group END -->
+
+                                <!-- order form group -->
+                                <div class="order-form-group" id="order-form-delivery-moscow">
+                                    <div class="order-form-group-delivery-list">
+                                        <div class="order-form-group-title">Выберите способ доставки</div>
+                                        <div class="order-delivery-item">
+                                            <div class="order-delivery-radio"><input type="radio" name="deliveryType" value="1" checked="checked" /></div>
+                                            <div class="order-delivery-item-name">Курьером в пределах МКАД</div>
+                                            <div class="order-delivery-item-text">Доставка осуществляется только с 9 до 18 часов, в течение 3-х рабочих дней.</div>
+                                            <div class="order-delivery-item-price">Стоимость доставки: <strong><span>300</span> руб.</strong></div>
+                                        </div>
+                                        <div class="order-delivery-item">
+                                            <div class="order-delivery-radio"><input type="radio" name="deliveryType" value="2" /></div>
+                                            <div class="order-delivery-item-name">Курьером по Московской области</div>
+                                            <div class="order-delivery-item-text">Доставка осуществляется только с 9 до 18 часов, в течение 3-х рабочих дней.</div>
+                                            <div class="order-delivery-item-price">Стоимость доставки: <strong><span>500</span> руб.</strong></div>
+                                        </div>
+                                        <div class="order-delivery-item">
+                                            <div class="order-delivery-radio"><input type="radio" name="deliveryType" value="2" /></div>
+                                            <div class="order-delivery-item-name">Забрать самостоятельно</div>
+                                            <div class="order-delivery-item-text">Забрать товар вы сможете в офисе: Москва, метро Фили, Кутузовский проезд, д. 16, оф. 202. Перед тем, как Вы отправитесь к нам в офис или магазин, предварительно согласуйте свой приезд с нашими менеджерами по тел.: 8-800-333-0345.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- order form group END -->
+
+                                <!-- order form group -->
+                                <div class="order-form-group" id="order-form-delivery-other">
+                                    <div class="order-form-group-delivery-list">
+                                        <div class="order-form-group-title">Выберите способ доставки</div>
+                                        <div class="order-delivery-item">
+                                            <div class="order-delivery-radio"><input type="radio" name="deliveryTypeRus" value="1" checked="checked" /></div>
+                                            <div class="order-delivery-item-name">Экспресс-доставка EMS Почта России</div>
+                                            <div class="order-delivery-item-text">Товар отправляется службой EMS Почта России. Сроки получения — до 2-х недель с момента заказа в зависимости от региона доставки. Оплата заказа при получении или предоплата электронными средствами.</div>
+                                            <div class="order-delivery-item-price">В случае предоплаты: <strong><span>690</span> руб.</strong><br />С наложенным платежом: <strong><span>853</span> руб.</strong></div>
+                                        </div>
+                                        <div class="order-delivery-item">
+                                            <div class="order-delivery-radio"><input type="radio" name="deliveryTypeRus" value="2" /></div>
+                                            <div class="order-delivery-item-name">Почта России</div>
+                                            <div class="order-delivery-item-text">Товар отправляется по почте наземным транспортом. Сроки получения — от 2 до 14 недель с момента отгрузки. Оплата заказа при получении на почтовом отделении или предоплата электронными средствами.</div>
+                                            <div class="order-delivery-item-price">В случае предоплаты: <strong><span>450</span> руб.</strong><br />С наложенным платежом: <strong><span>532</span> руб.</strong></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- order form group END -->
+
+                                <!-- order form group -->
+                                <div class="order-form-group" id="order-form-pay">
+                                    <div class="order-form-group-delivery-list">
+                                        <div class="order-form-group-title">Выберите способ оплаты</div>
+                                        <div class="order-delivery-item order-delivery-item-pay">
+                                            <div class="order-delivery-radio"><input type="radio" name="pay" value="1" checked="checked" /></div>
+                                            <div class="order-delivery-item-name">Наличными при получении</div>
+                                        </div>
+                                        <div class="order-delivery-item order-delivery-item-pay">
+                                            <div class="order-delivery-radio"><input type="radio" name="pay" value="2" /></div>
+                                            <div class="order-delivery-item-name">Банковской картой <img src="images/pay-card.png" alt="" width="128" height="24" /></div>
+                                        </div>
+                                        <div class="order-delivery-item order-delivery-item-pay">
+                                            <div class="order-delivery-radio"><input type="radio" name="pay" value="3" /></div>
+                                            <div class="order-delivery-item-name">Электронными деньгами <img src="images/pay-e.png" alt="" width="83" height="26" /></div>
+                                        </div>
+                                        <div class="order-delivery-item order-delivery-item-pay">
+                                            <div class="order-delivery-radio"><input type="radio" name="pay" value="4" /></div>
+                                            <div class="order-delivery-item-name">Наложенным платежом</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- order form group END -->
+
+                                <!-- order form group -->
+                                <div class="order-form-group" id="order-form-confirm">
+                                    <div class="order-form-group-title">Подтверждение</div>
+                                    <div class="order-form-cart">
+                                        <div>Вы выбрали <strong>6 продуктов</strong> на общую сумму: <strong>6460 рублей</strong></div>
+                                        <div>Стоимость доставки: <strong>300 рублей</strong></div>
+                                        <div>Итоговая стоимость заказа: <span>6760 рублей</span></div>
+                                    </div>
+                                    <div class="order-form-rules-title">Нажимая кнопку отправки формы, я соглашаюсь со следующими условиями:</div>
+                                    <div class="order-form-rules-text">
+                                        <textarea name="rules" readonly="readonly" rows="5" cols="10">Даю свое согласие ООО "Черишоп.ру" (далее – Интернет-магазин, адрес: Кутузовский проезд, д. 16, стр. 4б, Москва, Россия) на обработку Интернет-магазином моих персональных данных, указанных в настоящей и др. формах, размещенных на страницах Интернет-магазина, включая сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, передачу партнерам Интернет-магазина в целях исполнения обязательств Интернет-магазина или донесения информационных материалов, обезличивание, блокирование, уничтожение персональных данных. Даю свое согласие ООО "Черишоп.ру" (далее – Интернет-магазин, адрес: Кутузовский проезд, д. 16, стр. 4б, Москва, Россия) на обработку Интернет-магазином моих персональных данных, указанных в настоящей и др. формах, размещенных на страницах Интернет-магазина, включая сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, передачу партнерам Интернет-магазина в целях исполнения обязательств Интернет-магазина или донесения информационных материалов, обезличивание, блокирование, уничтожение персональных данных. Даю свое согласие ООО "Черишоп.ру" (далее – Интернет-магазин, адрес: Кутузовский проезд, д. 16, стр. 4б, Москва, Россия) на обработку Интернет-магазином моих персональных данных, указанных в настоящей и др. формах, размещенных на страницах Интернет-магазина, включая сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, передачу партнерам Интернет-магазина в целях исполнения обязательств Интернет-магазина или донесения информационных материалов, обезличивание, блокирование, уничтожение персональных данных. Даю свое согласие ООО "Черишоп.ру" (далее – Интернет-магазин, адрес: Кутузовский проезд, д. 16, стр. 4б, Москва, Россия) на обработку Интернет-магазином моих персональных данных, указанных в настоящей и др. формах, размещенных на страницах Интернет-магазина, включая сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, передачу партнерам Интернет-магазина в целях исполнения обязательств Интернет-магазина или донесения информационных материалов, обезличивание, блокирование, уничтожение персональных данных. Даю свое согласие ООО "Черишоп.ру" (далее – Интернет-магазин, адрес: Кутузовский проезд, д. 16, стр. 4б, Москва, Россия) на обработку Интернет-магазином моих персональных данных, указанных в настоящей и др. формах, размещенных на страницах Интернет-магазина, включая сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, передачу партнерам Интернет-магазина в целях исполнения обязательств Интернет-магазина или донесения информационных материалов, обезличивание, блокирование, уничтожение персональных данных. Даю свое согласие ООО "Черишоп.ру" (далее – Интернет-магазин, адрес: Кутузовский проезд, д. 16, стр. 4б, Москва, Россия) на обработку Интернет-магазином моих персональных данных, указанных в настоящей и др. формах, размещенных на страницах Интернет-магазина, включая сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, передачу партнерам Интернет-магазина в целях исполнения обязательств Интернет-магазина или донесения информационных материалов, обезличивание, блокирование, уничтожение персональных данных. Даю свое согласие ООО "Черишоп.ру" (далее – Интернет-магазин, адрес: Кутузовский проезд, д. 16, стр. 4б, Москва, Россия) на обработку Интернет-магазином моих персональных данных, указанных в настоящей и др. формах, размещенных на страницах Интернет-магазина, включая сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, передачу партнерам Интернет-магазина в целях исполнения обязательств Интернет-магазина или донесения информационных материалов, обезличивание, блокирование, уничтожение персональных данных. Даю свое согласие ООО "Черишоп.ру" (далее – Интернет-магазин, адрес: Кутузовский проезд, д. 16, стр. 4б, Москва, Россия) на обработку Интернет-магазином моих персональных данных, указанных в настоящей и др. формах, размещенных на страницах Интернет-магазина, включая сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, передачу партнерам Интернет-магазина в целях исполнения обязательств Интернет-магазина или донесения информационных материалов, обезличивание, блокирование, уничтожение персональных данных. Даю свое согласие ООО "Черишоп.ру" (далее – Интернет-магазин, адрес: Кутузовский проезд, д. 16, стр. 4б, Москва, Россия) на обработку Интернет-магазином моих персональных данных, указанных в настоящей и др. формах, размещенных на страницах Интернет-магазина, включая сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, передачу партнерам Интернет-магазина в целях исполнения обязательств Интернет-магазина или донесения информационных материалов, обезличивание, блокирование, уничтожение персональных данных. Даю свое согласие ООО "Черишоп.ру" (далее – Интернет-магазин, адрес: Кутузовский проезд, д. 16, стр. 4б, Москва, Россия) на обработку Интернет-магазином моих персональных данных, указанных в настоящей и др. формах, размещенных на страницах Интернет-магазина, включая сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, передачу партнерам Интернет-магазина в целях исполнения обязательств Интернет-магазина или донесения информационных материалов, обезличивание, блокирование, уничтожение персональных данных. Даю свое согласие ООО "Черишоп.ру" (далее – Интернет-магазин, адрес: Кутузовский проезд, д. 16, стр. 4б, Москва, Россия) на обработку Интернет-магазином моих персональных данных, указанных в настоящей и др. формах, размещенных на страницах Интернет-магазина, включая сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, передачу партнерам Интернет-магазина в целях исполнения обязательств Интернет-магазина или донесения информационных материалов, обезличивание, блокирование, уничтожение персональных данных. Даю свое согласие ООО "Черишоп.ру" (далее – Интернет-магазин, адрес: Кутузовский проезд, д. 16, стр. 4б, Москва, Россия) на обработку Интернет-магазином моих персональных данных, указанных в настоящей и др. формах, размещенных на страницах Интернет-магазина, включая сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, передачу партнерам Интернет-магазина в целях исполнения обязательств Интернет-магазина или донесения информационных материалов, обезличивание, блокирование, уничтожение персональных данных.</textarea>
+                                    </div>
+                                    <div class="order-form-send"><input type="submit" value="Завершить оформление заказа" /></div>
+                                </div>
+                                <!-- order form group END -->
+
+                            </div>
+                            <!-- order other steps END -->
+
+                        </div>
+                        <!-- order END -->
+
+                    </div>
+                    <!-- content END -->
+
+                </div>
+                <!-- middle END -->
+
+            </div>
+        </div>
+        <!-- wrapper END -->
+
+        <!-- footer -->
+        <div class="footer">
+
+            <ul class="footer-menu">
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Возврат товара</a></li>
+                <li class="special"><a href="#">Сила Мертвого Моря</a></li>
+            </ul>
+
+            <div class="footer-content">
+                <div class="footer-social-item">
+                    <script>(function(d){
+                    var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+                    js = d.createElement('script'); js.id = id; js.async = true;
+                    js.src = '//connect.facebook.net/ru_RU/all.js#xfbml=1';
+                    d.getElementsByTagName('head')[0].appendChild(js);
+                    }(document));
+                    </script>
+                    <div class='fb-like' data-send='false' data-layout='button_count'  data-width='100' data-show-faces='false'></div>
+                </div>
+                <div class="footer-social-item footer-social-item-side">
+                    <a href='https://twitter.com/share' class='twitter-share-button' data-count='horizontal' data-lang='ru'>Tweet</a><script type='text/javascript' src='//platform.twitter.com/widgets.js'></script>
+                </div>
+                <div class="footer-social-item footer-social-item-side">
+                    <g:plusone size="medium"></g:plusone>
+
+                    <script type="text/javascript">
+                        window.___gcfg = {lang: 'ru'};
+
+                        (function() {
+                            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                            po.src = 'https://apis.google.com/js/plusone.js';
+                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                        })();
+                    </script>
+                </div>
+                <div class="copyrights">© Dr.Nona Market Inc. Все права защищены.</div>
+            </div>
+
+            <div class="footer-email"><a href="#">help@drnona.ru</a></div>
+            <div class="developer">Разработка сайта: <a href="#">Renaissance AG</a></div>
+
+        </div>
+        <!-- footer END -->
+
+        <!-- window email -->
+        <div class="window-email">
+            <div class="window-email-container">
+                <div class="window-email-form">
+                    <form action="#" method="post">
+                        <div class="window-email-title">Восстановление пароля</div>
+                        <div class="window-email-label">Введите Ваш e-mail:</div>
+                        <div class="window-email-input"><input type="text" name="email" value="" /></div>
+                        <div class="window-email-ctrl">
+                            <div class="window-email-submit"><input type="submit" value="Восстановить пароль" /></div>
+                            <div class="window-email-cancel"><a href="#">Отмена</a></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="window-email-success">На Ваш e-mail:&nbsp; <a href="#">ivanova.inna@yandex.ru</a><br />отправлено письмо с паролем.</div>
+                <div class="window-email-error">
+                    <div class="window-email-error-text">Пользователь&nbsp; <a href="#">ivanova.inna@yandex.ru</a><br />у нас пока не зарегистрирован</div>
+                    <div class="window-email-error-back"><a href="#">Вернуться и продолжить оформление</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- window email END -->
+
+    </body>
+</html>

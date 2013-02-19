@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>DrNona</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <link rel="stylesheet" href="css/jquery-ui-1.8.23.custom.css" type="text/css" />
+
+        <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+        <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="js/jquery.animate-colors-min.js"></script>
+        <script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+        <script type="text/javascript" src="js/tools.js"></script>
+
+        <meta name="viewport" content="width=1000" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="wrapper-inner">
+
+                <!-- header -->
+                <div class="header">
+
+                    <a href="#" class="logo"><img src="images/logo.png" alt="" width="216" height="73" /></a>
+
+                    <div class="title">Косметика Мертвого моря</div>
+
+                    <!-- consultant -->
+                    <div class="consultant">
+                        <div class="consultant-photo"><img src="files/consultant.jpg" alt="" width="70" height="70" /></div>
+                        <div class="consultant-name"><div>Консультант</div> Ольга</div>
+                        <div class="consultant-title">Позвоните, чтобы задать вопрос или оформить заказ</div>
+                        <div class="consultant-phone"><span>(495)</span> 345-12-23</div>
+                        <div class="consultant-callback">
+                            Перезвонить вам?<br />
+                            <a href="#" class="consultant-callback-link">Введите</a> номер телефона
+                            <div class="consultant-window">
+                                <div class="consultant-window-form">
+                                    <form action="#" method="post">
+                                        <div class="consultant-window-title">Представьтесь</div>
+                                        <div class="consultant-input"><input type="text" name="name" value="" class="required" /></div>
+                                        <div class="consultant-window-title">Телефон</div>
+                                        <div class="consultant-input"><input type="text" name="phone" value="" class="required" /></div>
+                                        <div class="consultant-window-ctrl">
+                                            <div class="consultant-window-submit"><input type="submit" value="Заказать звонок" /></div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="consultant-window-send">С Вами скоро свяжутся</div>
+                                <a href="#" class="consultant-close"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- consultant END -->
+
+                    <!-- header cart -->
+                    <div class="header-cart header-cart-full">
+                        <div class="header-cart-container">
+                            <div class="header-cart-icon"></div>
+                            <div class="header-cart-content">
+                                <div class="header-cart-content-top"></div>
+                                <div class="header-cart-content-middle">
+                                    <div class="header-cart-content-title">Ваша корзина</div>
+                                    <div class="header-cart-content-item">
+                                        <div class="header-cart-content-item-photo"><a href="#"><img src="files/header-cart-1.jpg" alt="" width="32" height="52" /></a></div>
+                                        <div class="header-cart-content-item-name"><a href="#">Лосьон для тела «солярис»</a> <span>(2 шт.)</span></div>
+                                        <div class="header-cart-content-item-cost">3600р.</div>
+                                    </div>
+                                    <div class="header-cart-content-item">
+                                        <div class="header-cart-content-item-photo"><img src="files/header-cart-2.jpg" alt="" width="32" height="43" /></div>
+                                        <div class="header-cart-content-item-name"><a href="#">Питальтельный лосьон для тела</a> <span>(1 шт.)</span></div>
+                                        <div class="header-cart-content-item-cost">2400р.</div>
+                                    </div>
+                                    <div class="header-cart-content-item">
+                                        <div class="header-cart-content-item-photo"><img src="files/header-cart-3.jpg" alt="" width="32" height="48" /></div>
+                                        <div class="header-cart-content-item-name"><a href="#">Динамический увлажняющий крем</a> <span>(1 шт.)</span></div>
+                                        <div class="header-cart-content-item-cost">2400р.</div>
+                                    </div>
+                                    <div class="header-cart-content-item">
+                                        <div class="header-cart-content-item-summ">Итого</div>
+                                        <div class="header-cart-content-item-cost">8700р.</div>
+                                    </div>
+                                    <div class="header-cart-content-link"><a href="#">Оформить заказ</a></div>
+                                </div>
+                                <div class="header-cart-content-bottom"></div>
+                            </div>
+                        </div>
+                        <div class="header-cart-text">
+                            <div class="header-cart-link"><a href="#">Корзина</a> <strong>(<span>3</span>)</strong></div>
+                            <div class="header-cart-summ"><span>8700</span> руб.</div>
+                            <div class="header-cart-delivery">Бесплатная доставка!</div>
+                        </div>
+                    </div>
+                    <!-- header cart END -->
+
+                </div>
+                <!-- header END -->
+
+                <!-- middle -->
+                <div class="middle">
+
+                    <!-- content -->
+                    <div class="content">
+
+                        <!-- order -->
+                        <div class="order">
+                            <h2>Оформление заказа</h2>
+
+                            <!-- order steps -->
+                            <div class="order-steps">
+                                <div class="order-steps-inner">
+                                    <div class="order-steps-content">
+                                        <ul>
+                                            <li class="prev"><div><span>1</span><strong>Контакты</strong></div></li>
+                                            <li class="prev"><div><span>2</span><strong>Доставка</strong></div></li>
+                                            <li class="prev"><div><span>3</span><strong>Оплата</strong></div></li>
+                                            <li class="curr"><div><span>4</span><strong>Подтверждение</strong></div></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- order steps END -->
+
+                            <!-- order user -->
+                            <div class="order-user">
+                                <div class="order-user-name">Здравствуйте, Оксана! <a href="#">Выход</a></div>
+                            </div>
+                            <!-- order user END -->
+
+                            <!-- order form group -->
+                            <div class="order-form-group order-form-group-number">
+                                <div class="order-number">Спасибо! Ваш заказ <strong>№0021</strong> поступил в обработку</div>
+                                <div class="order-manager">Наш менеджер свяжется с вами в течение 1 часа.</div>
+                            </div>
+                            <!-- order form group END -->
+
+                            <!-- order form group -->
+                            <div class="order-form-group order-form-group-confirm-cart">
+                                <div class="order-form-cart">
+                                    <div>Вы выбрали <strong>6 продуктов</strong> на общую сумму: <strong>6460 рублей</strong></div>
+                                    <div>Стоимость доставки: <strong>300 рублей</strong></div>
+                                    <div>Итоговая стоимость заказа: <span>6760 рублей</span></div>
+                                </div>
+                            </div>
+                            <!-- order form group END -->
+
+                            <!-- order form group -->
+                            <div class="order-form-group order-form-group-info">
+                                <div class="order-form-group-title">Контакты</div>
+                                <div class="order-form-info">
+                                    <div><span>ФИО:</span> Емельянова Юлия Сергеевна</div>
+                                    <div><span>E-mail:</span> yulchik003@mail.ru</div>
+                                    <div><span>Телефон:</span> 8 903 724-34-12</div>
+                                </div>
+                            </div>
+                            <!-- order form group END -->
+
+                            <!-- order form group -->
+                            <div class="order-form-group order-form-group-info">
+                                <div class="order-form-group-title">Доставка</div>
+                                <div class="order-form-info">
+                                    <div><span>Город:</span> Москва</div>
+                                    <div><span>Адрес:</span> Севастопольский пр., 11</div>
+                                </div>
+                            </div>
+                            <!-- order form group END -->
+
+                            <!-- order form group -->
+                            <div class="order-form-group order-form-group-info">
+                                <div class="order-form-group-title">Способ доставки</div>
+                                <div class="order-form-info">
+                                    <div>Курьером в пределах МКАД</div>
+                                    <div>Доставка осуществляется только с 9 до 18 часов, в течение 3-х рабочих дней.</div>
+                                    <div>Стоимость доставки: <strong>300 руб.</strong></div>
+                                </div>
+                            </div>
+                            <!-- order form group END -->
+
+                            <!-- order form group -->
+                            <div class="order-form-group order-form-group-info">
+                                <div class="order-form-group-title">Способ оплаты</div>
+                                <div class="order-form-info">
+                                    <div>Наличными при получении</div>
+                                </div>
+                            </div>
+                            <!-- order form group END -->
+
+                        </div>
+                        <!-- order END -->
+
+                    </div>
+                    <!-- content END -->
+
+                </div>
+                <!-- middle END -->
+
+                <div class="hits-title">Хотите продолжить покупки?  Хиты продаж:</div>
+
+                <!-- catalogue row -->
+                <div class="catalogue">
+
+                    <!-- catalogue item top -->
+                    <div class="catalogue-item-top">
+                        <div class="catalogue-item-photo"><a href="#"><img src="files/hit-3.jpg" alt="" width="120" height="200" /></a></div>
+                        <div class="catalogue-item-text">
+                            <div class="catalogue-item-name"><a href="#">Квартет солей Мертвого моря для ванны</a></div>
+                            <div class="catalogue-item-name-eng">Dynamic hydrating cream</div>
+                        </div>
+                    </div>
+                    <!-- catalogue item top END -->
+
+                    <!-- catalogue item top -->
+                    <div class="catalogue-item-top">
+                        <div class="catalogue-item-photo"><a href="#"><img src="files/catalogue-5.jpg" alt="" width="145" height="200" /></a></div>
+                        <div class="catalogue-item-text">
+                            <div class="catalogue-item-name"><a href="#">Лосьон для тела&nbsp;«солярис»</a></div>
+                            <div class="catalogue-item-name-eng">Solaris body lotion</div>
+                        </div>
+                    </div>
+                    <!-- catalogue item top END -->
+
+                    <!-- catalogue item top -->
+                    <div class="catalogue-item-top">
+                        <div class="catalogue-item-photo"><a href="#"><img src="files/catalogue-4.png" alt="" width="111" height="195" /></a></div>
+                        <div class="catalogue-item-text">
+                            <div class="catalogue-item-name"><a href="#">Бальзам для век</a></div>
+                            <div class="catalogue-item-name-eng">Eye contour balm</div>
+                        </div>
+                    </div>
+                    <!-- catalogue item top END -->
+
+                    <!-- catalogue item top -->
+                    <div class="catalogue-item-top">
+                        <div class="catalogue-item-photo"><a href="#"><img src="files/catalogue-6.jpg" alt="" width="198" height="198" /></a></div>
+                        <div class="catalogue-item-text">
+                            <div class="catalogue-item-name"><a href="#">Лосьон для тела&nbsp;«солярис»</a></div>
+                            <div class="catalogue-item-name-eng">Solaris body lotion</div>
+                        </div>
+                    </div>
+                    <!-- catalogue item top END -->
+
+                </div>
+
+                <div class="catalogue">
+
+                    <!-- catalogue item bottom -->
+                    <div class="catalogue-item-bottom">
+                        <div class="catalogue-item-ctrl">
+                            <div class="catalogue-item-price"><span>1800</span>р.</div>
+                            <div class="catalogue-item-buy"><a href="#" rel="В корзине">В корзину</a></div>
+                        </div>
+                    </div>
+                    <!-- catalogue item bottom END -->
+
+                    <!-- catalogue item bottom -->
+                    <div class="catalogue-item-bottom">
+                        <div class="catalogue-item-ctrl">
+                            <div class="catalogue-item-price"><span>2350</span>р.</div>
+                            <div class="catalogue-item-buy"><a href="#" rel="В корзине">В корзину</a></div>
+                        </div>
+                    </div>
+                    <!-- catalogue item bottom END -->
+
+                    <!-- catalogue item bottom -->
+                    <div class="catalogue-item-bottom">
+                        <div class="catalogue-item-ctrl">
+                            <div class="catalogue-item-price"><span>3100</span>р.</div>
+                            <div class="catalogue-item-buy"><a href="#" rel="В корзине">В корзину</a></div>
+                        </div>
+                    </div>
+                    <!-- catalogue item bottom END -->
+
+                    <!-- catalogue item bottom -->
+                    <div class="catalogue-item-bottom">
+                        <div class="catalogue-item-ctrl">
+                            <div class="catalogue-item-price"><span>2350</span>р.</div>
+                            <div class="catalogue-item-buy"><a href="#" rel="В корзине">В корзину</a></div>
+                        </div>
+                    </div>
+                    <!-- catalogue item bottom END -->
+
+                </div>
+                <!-- catalogue row END -->
+
+            </div>
+        </div>
+        <!-- wrapper END -->
+
+        <!-- footer -->
+        <div class="footer">
+
+            <ul class="footer-menu">
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Возврат товара</a></li>
+                <li class="special"><a href="#">Сила Мертвого Моря</a></li>
+            </ul>
+
+            <div class="footer-content">
+                <div class="footer-social-item">
+                    <script>(function(d){
+                    var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+                    js = d.createElement('script'); js.id = id; js.async = true;
+                    js.src = '//connect.facebook.net/ru_RU/all.js#xfbml=1';
+                    d.getElementsByTagName('head')[0].appendChild(js);
+                    }(document));
+                    </script>
+                    <div class='fb-like' data-send='false' data-layout='button_count'  data-width='100' data-show-faces='false'></div>
+                </div>
+                <div class="footer-social-item footer-social-item-side">
+                    <a href='https://twitter.com/share' class='twitter-share-button' data-count='horizontal' data-lang='ru'>Tweet</a><script type='text/javascript' src='//platform.twitter.com/widgets.js'></script>
+                </div>
+                <div class="footer-social-item footer-social-item-side">
+                    <g:plusone size="medium"></g:plusone>
+
+                    <script type="text/javascript">
+                        window.___gcfg = {lang: 'ru'};
+
+                        (function() {
+                            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                            po.src = 'https://apis.google.com/js/plusone.js';
+                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                        })();
+                    </script>
+                </div>
+                <div class="copyrights">© Dr.Nona Market Inc. Все права защищены.</div>
+            </div>
+
+            <div class="footer-email"><a href="#">help@drnona.ru</a></div>
+            <div class="developer">Разработка сайта: <a href="#">Renaissance AG</a></div>
+
+        </div>
+        <!-- footer END -->
+
+        <!-- incart window -->
+        <div class="incart-window">
+            <div class="incart-window-container">
+                <div class="incart-window-title">Спасибо, продукт в корзине!</div>
+                <div class="incart-window-content">
+                    <div class="incart-window-item">
+                        <div class="incart-window-item-photo"><img src="files/incart-item.jpg" alt="" width="80" height="85" /></div>
+                        <div class="incart-window-item-info">
+                            <div class="incart-window-item-name">Динамический увлажняющий бальзам</div>
+                            <div class="incart-window-item-name-eng">Dynamic hydrating cream</div>
+                        </div>
+                    </div>
+                    <div class="incart-window-ctrl">
+                        <div class="incart-window-ctrl-continue"><a href="#">Продолжить покупки</a></div>
+                        <a href="#" class="incart-window-cart"><img src="images/incart-window-cart.png" alt="" width="20" height="20" />Перейти в корзину</a>
+                    </div>
+                    <div class="incart-window-other-title">Отличное сочетание:</div>
+
+                    <!-- catalogue row -->
+                    <div class="catalogue">
+
+                        <!-- catalogue item top -->
+                        <div class="catalogue-item-top">
+                            <div class="catalogue-item-photo"><a href="#"><img src="files/incart-catalogue-1.jpg" alt="" width="70" height="93" /></a></div>
+                            <div class="catalogue-item-text">
+                                <div class="catalogue-item-name"><a href="#">Питательный лосьон для тела морская соль для тела морская соль</a></div>
+                            </div>
+                        </div>
+                        <!-- catalogue item top END -->
+
+                        <!-- catalogue item top -->
+                        <div class="catalogue-item-top">
+                            <div class="catalogue-item-photo"><a href="#"><img src="files/incart-catalogue-2.jpg" alt="" width="58" height="87" /></a></div>
+                            <div class="catalogue-item-text">
+                                <div class="catalogue-item-name"><a href="#">Динамический увлажняющий крем</a></div>
+                            </div>
+                        </div>
+                        <!-- catalogue item top END -->
+
+                    </div>
+
+                    <div class="catalogue">
+
+                        <!-- catalogue item bottom -->
+                        <div class="catalogue-item-bottom">
+                            <div class="catalogue-item-ctrl">
+                                <div class="catalogue-item-price"><span>1200</span>р.</div>
+                                <div class="catalogue-item-buy"><a href="#" rel="В корзине">В корзину</a></div>
+                            </div>
+                        </div>
+                        <!-- catalogue item bottom END -->
+
+                        <!-- catalogue item bottom -->
+                        <div class="catalogue-item-bottom">
+                            <div class="catalogue-item-ctrl">
+                                <div class="catalogue-item-price"><span>2400</span>р.</div>
+                                <div class="catalogue-item-buy"><a href="#" rel="В корзине">В корзину</a></div>
+                            </div>
+                        </div>
+                        <!-- catalogue item bottom END -->
+
+                    </div>
+                    <!-- catalogue row END -->
+
+                </div>
+            </div>
+        </div>
+        <!-- incart window END -->
+
+    </body>
+</html>

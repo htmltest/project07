@@ -1,0 +1,537 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>DrNona</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <link rel="stylesheet" href="css/jquery-ui-1.8.23.custom.css" type="text/css" />
+
+        <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+        <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="js/jquery.animate-colors-min.js"></script>
+        <script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+        <script type="text/javascript" src="js/tools.js"></script>
+
+        <meta name="viewport" content="width=1000" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="wrapper-inner">
+
+                <!-- header -->
+                <div class="header">
+
+                    <a href="#" class="logo"><img src="images/logo.png" alt="" width="216" height="73" /></a>
+
+                    <div class="title">Косметика Мертвого моря</div>
+
+                    <!-- consultant -->
+                    <div class="consultant">
+                        <div class="consultant-photo"><img src="files/consultant.jpg" alt="" width="70" height="70" /></div>
+                        <div class="consultant-name"><div>Консультант</div> Ольга</div>
+                        <div class="consultant-title">Позвоните, чтобы задать вопрос или оформить заказ</div>
+                        <div class="consultant-phone"><span>(495)</span> 345-12-23</div>
+                        <div class="consultant-callback">
+                            Перезвонить вам?<br />
+                            <a href="#" class="consultant-callback-link">Введите</a> номер телефона
+                            <div class="consultant-window">
+                                <div class="consultant-window-form">
+                                    <form action="#" method="post">
+                                        <div class="consultant-window-title">Представьтесь</div>
+                                        <div class="consultant-input"><input type="text" name="name" value="" class="required" /></div>
+                                        <div class="consultant-window-title">Телефон</div>
+                                        <div class="consultant-input"><input type="text" name="phone" value="" class="required" /></div>
+                                        <div class="consultant-window-ctrl">
+                                            <div class="consultant-window-submit"><input type="submit" value="Заказать звонок" /></div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="consultant-window-send">С Вами скоро свяжутся</div>
+                                <a href="#" class="consultant-close"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- consultant END -->
+
+                    <!-- header cart -->
+                    <div class="header-cart header-cart-full">
+                        <div class="header-cart-container">
+                            <div class="header-cart-icon"></div>
+                            <div class="header-cart-content">
+                                <div class="header-cart-content-top"></div>
+                                <div class="header-cart-content-middle">
+                                    <div class="header-cart-content-title">Ваша корзина</div>
+                                    <div class="header-cart-content-item">
+                                        <table>
+                                            <tr>
+                                                <td class="header-cart-content-item-photo"><a href="#"><img src="files/header-cart-1.jpg" alt="" width="32" height="52" /></a></td>
+                                                <td class="header-cart-content-item-content">
+                                                    <div class="header-cart-content-item-content-inner">
+                                                        <div class="header-cart-content-item-name"><a href="#">Лосьон для тела «солярис»</a> <span>(2 шт.)</span></div>
+                                                        <div class="header-cart-content-item-cost">3600р.</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="header-cart-content-item">
+                                        <table>
+                                            <tr>
+                                                <td class="header-cart-content-item-photo"><img src="files/header-cart-2.jpg" alt="" width="32" height="43" /></td>
+                                                <td class="header-cart-content-item-content">
+                                                    <div class="header-cart-content-item-content-inner">
+                                                        <div class="header-cart-content-item-name"><a href="#">Питальтельный лосьон для тела</a> <span>(1 шт.)</span></div>
+                                                        <div class="header-cart-content-item-cost">2400р.</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="header-cart-content-item">
+                                        <table>
+                                            <tr>
+                                                <td class="header-cart-content-item-photo"><img src="files/header-cart-3.jpg" alt="" width="32" height="48" /></td>
+                                                <td class="header-cart-content-item-content">
+                                                    <div class="header-cart-content-item-content-inner">
+                                                        <div class="header-cart-content-item-name"><a href="#">Динамический увлажняющий крем</a> <span>(1 шт.)</span></div>
+                                                        <div class="header-cart-content-item-cost">2400р.</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="header-cart-content-item">
+                                        <div class="header-cart-content-item-summ">Итого</div>
+                                        <div class="header-cart-content-item-cost">8700р.</div>
+                                    </div>
+                                    <div class="header-cart-content-link"><a href="#">Оформить заказ</a></div>
+                                </div>
+                                <div class="header-cart-content-bottom"></div>
+                            </div>
+                        </div>
+                        <div class="header-cart-text">
+                            <div class="header-cart-link"><a href="#">Корзина</a> <strong>(<span>3</span>)</strong></div>
+                            <div class="header-cart-summ"><span>8700</span> руб.</div>
+                            <div class="header-cart-delivery">Бесплатная доставка!</div>
+                        </div>
+                    </div>
+                    <!-- header cart END -->
+
+                </div>
+                <!-- header END -->
+
+                <!-- top -->
+                <div class="top">
+                    <ul>
+                        <li class="active"><a href="#">Косметика</a></li>
+                        <li><a href="#">Парфюмерия</a></li>
+                        <li><a href="#">Диетические добавки</a></li>
+                    </ul>
+
+                    <div class="search">
+                        <form action="#" method="post">
+                            <div class="search-submit"><input type="submit" value="" /></div>
+                            <div class="search-input"><input type="text" name="search" value="" /></div>
+                        </form>
+                    </div>
+                </div>
+                <!-- top END -->
+
+                <!-- rubrics -->
+                <div class="rubrics">
+                    <ul>
+                        <li><a href="#">Уход за лицом</a></li>
+                        <li><a href="#">Уход за телом</a></li>
+                        <li><a href="#">Уход за волосами</a></li>
+                        <li><a href="#">Средства личной гигиены</a></li>
+                    </ul>
+                </div>
+                <!-- rubrics END -->
+
+                <!-- middle -->
+                <div class="middle">
+
+                    <!-- content -->
+                    <div class="content">
+
+                        <!-- product side -->
+                        <div class="product-side">
+
+                            <div class="product-side-big">
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <div class="catalogue-item-photo"><a href="#"><img src="files/product-big.jpg" alt="" width="208" height="251" /></a></div>
+                                    <div class="catalogue-item-ctrl">
+                                        <div class="catalogue-item-price"><span>1800</span>р.</div>
+                                        <div class="catalogue-item-buy"><a href="#" rel="В корзине">В корзину</a></div>
+                                    </div>
+                                </div>
+                                <!-- catalogue item END -->
+
+                            </div>
+
+                            <!-- product side block -->
+                            <div class="product-side-block">
+                                <div class="product-side-block-title">Спешите?</div>
+                                <div class="product-side-block-text">Оформите заказ за 10 секунд!</div>
+                                <div class="product-side-block-order">
+                                    <a href="#" class="product-side-block-order-link">Быстрый заказ</a>
+                                    <div class="product-quick">
+                                        <div class="product-quick-form">
+                                            <form action="#" method="post">
+                                                <div class="product-quick-title">Быстрый заказ</div>
+                                                <div class="product-quick-item">
+                                                    <table>
+                                                        <tr>
+                                                            <td class="product-quick-item-photo"><img src="files/product-quick.jpg" alt="" width="44" height="44" /></td>
+                                                            <td class="product-quick-item-content">
+                                                                <div class="product-quick-item-content-inner">
+                                                                    <div class="product-quick-item-name">Динамический увлажняющий крем для лица <span>(1 шт.)</span></div>
+                                                                    <div class="product-quick-item-cost">1800р.</div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <div class="product-quick-form-content">
+                                                    <div class="product-quick-row">
+                                                        <div class="product-quick-label">Представьтесь</div>
+                                                        <div class="product-quick-input"><input type="text" name="name" value="" /></div>
+                                                    </div>
+                                                    <div class="product-quick-row">
+                                                        <div class="product-quick-label">Телефон</div>
+                                                        <div class="product-quick-input"><input type="text" name="phone" value="" class="required" /></div>
+                                                    </div>
+                                                    <div class="product-quick-row">
+                                                        <div class="product-quick-label">Ваш E-mail</div>
+                                                        <div class="product-quick-input"><input type="text" name="email" value="" /></div>
+                                                    </div>
+                                                    <div class="product-quick-row">
+                                                        <div class="product-quick-label">Комментарий</div>
+                                                        <div class="product-quick-input"><textarea name="comment" rows="5" cols="10"></textarea></div>
+                                                    </div>
+                                                    <div class="product-quick-window-ctrl">
+                                                        <div class="product-quick-window-submit"><input type="submit" value="Сделать заказ" /></div>
+                                                        <div class="product-quick-window-cancel"><a href="#">Отмена</a></div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <a href="#" class="product-quick-close"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product side block END -->
+
+                            <!-- product side block -->
+                            <div class="product-side-block">
+                                <div class="product-side-block-title">Понравилось?</div>
+                                <div class="product-side-block-text">Поделитесь с подругами!</div>
+                                <div class="product-side-block-social"><img src="files/product-social-2.png" alt="" width="163" height="24" /></div>
+                            </div>
+                            <!-- product side block END -->
+
+                        </div>
+                        <!-- product side END -->
+
+                        <!-- product info -->
+                        <div class="product-info">
+                            <div class="product-info-content">
+                                <h2>Динамический увлажняющий крем для лица</h2>
+                                <div class="product-info-eng">Dynamic hydrating cream</div>
+
+                                <div class="product-info-block">
+                                    <h3>Описание</h3>
+                                    <p>Восполняет дефицит влаги в коже, повышает ее эластичность и тонус, обладает молаживающим эффектом, разглаживает сеть мелких морщин, стимулирует обменные процессы в коже, устраняет шелушение и сухость</p>
+                                </div>
+
+                                <div class="product-info-block">
+                                    <h3>Результат</h3>
+                                    <p>Здоровый цвет лица, сияющая, упругая кожа</p>
+                                </div>
+
+                                <div class="product-info-block">
+                                    <h3>Состав</h3>
+                                    <p>Биорганоминеральный комплекс, салициловая кислота, молочная кислота, ароматические масла жожоба, апельсина, лаванды, эмульсия растительного воска, экстракты ромашки, алоэ, лилии, токоферол (витамин Е), аскорбиновя кислота</p>
+                                </div>
+
+                                <div class="product-info-block">
+                                    <h3>Применение</h3>
+                                    <p>Подходит для любого типа кожи. Наносить средство на очищенную кожу лица и шеи каждое утро легкими массажными движениями.</p>
+                                </div>
+
+                                <div class="product-info-block product-info-block-last">
+                                    <h3>Секрет красоты</h3>
+                                    <p>Питательная маска для лица с отбеливающим эффектом!<br />Смешайте 1 ч.л. молотого кофе, 1 ч.л. меда, сок половины лимона, грязевую <a href="#">маску для лица Dr Nona</a>. Нанесите на очищенную кожу на 10 минут, смойте прохладной водой. В завершение процедуры нанесите динамический увлажняющий крем легкими массажными движениями. Вы заметите, как ваша кожа засияет ослепительным блеском!</p>
+                                    <div class="product-ctrl">
+                                        <div class="product-ctrl-email">
+                                            <a href="#" class="product-ctrl-email-link">Отправить рецепт на почту</a>
+                                            <div class="product-email-window">
+                                                <div class="product-email-window-form">
+                                                    <form action="#" method="post">
+                                                        <div class="product-email-window-title">Введите E-mail</div>
+                                                        <div class="product-email-input"><input type="text" name="email" value="" class="required email" /></div>
+                                                        <div class="product-email-window-ctrl">
+                                                            <div class="product-email-window-submit"><input type="submit" value="Отправить" /></div>
+                                                            <div class="product-email-window-cancel"><a href="#">Отмена</a></div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="product-email-window-send">Рецепт отправлен на Ваш e-mail!</div>
+                                                <a href="#" class="product-email-close"></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-ctrl-recept">
+                                            <a href="#" class="product-ctrl-recept-link">Положить в корзину<br />все продукты из рецепта</a>
+                                        </div>
+                                    </div>
+                                    <div class="product-block-social">
+                                        <div class="product-block-social-title">Поделитесь рецептом:</div>
+                                        <div class="product-social"><img src="files/product-social.png" alt="" width="219" height="24" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product info END -->
+
+                    </div>
+                    <!-- content END -->
+
+                </div>
+                <!-- middle END -->
+
+                <div class="hits-title">Отличное сочетание:</div>
+
+                <!-- catalogue row -->
+                <div class="catalogue">
+
+                    <!-- catalogue item top -->
+                    <div class="catalogue-item-top">
+                        <div class="catalogue-item-photo"><a href="#"><img src="files/hit-3.jpg" alt="" width="120" height="200" /></a></div>
+                        <div class="catalogue-item-text">
+                            <div class="catalogue-item-name"><a href="#">Квартет солей Мертвого моря для ванны</a></div>
+                            <div class="catalogue-item-name-eng">Dynamic hydrating cream</div>
+                        </div>
+                    </div>
+                    <!-- catalogue item top END -->
+
+                    <!-- catalogue item top -->
+                    <div class="catalogue-item-top">
+                        <div class="catalogue-item-photo"><a href="#"><img src="files/catalogue-5.jpg" alt="" width="145" height="200" /></a></div>
+                        <div class="catalogue-item-text">
+                            <div class="catalogue-item-name"><a href="#">Лосьон для тела&nbsp;«солярис»</a></div>
+                            <div class="catalogue-item-name-eng">Solaris body lotion</div>
+                        </div>
+                    </div>
+                    <!-- catalogue item top END -->
+
+                    <!-- catalogue item top -->
+                    <div class="catalogue-item-top">
+                        <div class="catalogue-item-photo"><a href="#"><img src="files/catalogue-4.png" alt="" width="111" height="195" /></a></div>
+                        <div class="catalogue-item-text">
+                            <div class="catalogue-item-name"><a href="#">Бальзам для век</a></div>
+                            <div class="catalogue-item-name-eng">Eye contour balm</div>
+                        </div>
+                    </div>
+                    <!-- catalogue item top END -->
+
+                    <!-- catalogue item top -->
+                    <div class="catalogue-item-top">
+                        <div class="catalogue-item-photo"><a href="#"><img src="files/catalogue-6.jpg" alt="" width="198" height="198" /></a></div>
+                        <div class="catalogue-item-text">
+                            <div class="catalogue-item-name"><a href="#">Лосьон для тела&nbsp;«солярис»</a></div>
+                            <div class="catalogue-item-name-eng">Solaris body lotion</div>
+                        </div>
+                    </div>
+                    <!-- catalogue item top END -->
+
+                </div>
+
+                <div class="catalogue">
+
+                    <!-- catalogue item bottom -->
+                    <div class="catalogue-item-bottom">
+                        <div class="catalogue-item-ctrl">
+                            <div class="catalogue-item-price"><span>1800</span>р.</div>
+                            <div class="catalogue-item-buy"><a href="#" rel="В корзине">В корзину</a></div>
+                        </div>
+                    </div>
+                    <!-- catalogue item bottom END -->
+
+                    <!-- catalogue item bottom -->
+                    <div class="catalogue-item-bottom">
+                        <div class="catalogue-item-ctrl">
+                            <div class="catalogue-item-price"><span>2350</span>р.</div>
+                            <div class="catalogue-item-buy"><a href="#" rel="В корзине">В корзину</a></div>
+                        </div>
+                    </div>
+                    <!-- catalogue item bottom END -->
+
+                    <!-- catalogue item bottom -->
+                    <div class="catalogue-item-bottom">
+                        <div class="catalogue-item-ctrl">
+                            <div class="catalogue-item-price"><span>3100</span>р.</div>
+                            <div class="catalogue-item-buy"><a href="#" rel="В корзине">В корзину</a></div>
+                        </div>
+                    </div>
+                    <!-- catalogue item bottom END -->
+
+                    <!-- catalogue item bottom -->
+                    <div class="catalogue-item-bottom">
+                        <div class="catalogue-item-ctrl">
+                            <div class="catalogue-item-price"><span>2350</span>р.</div>
+                            <div class="catalogue-item-buy"><a href="#" rel="В корзине">В корзину</a></div>
+                        </div>
+                    </div>
+                    <!-- catalogue item bottom END -->
+
+                </div>
+                <!-- catalogue row END -->
+
+            </div>
+        </div>
+        <!-- wrapper END -->
+
+        <!-- footer -->
+        <div class="footer">
+
+            <ul class="footer-menu">
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Возврат товара</a></li>
+                <li class="special"><a href="#">Сила Мертвого Моря</a></li>
+            </ul>
+
+            <div class="footer-content">
+                <div class="footer-social-item">
+                    <script>(function(d){
+                    var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+                    js = d.createElement('script'); js.id = id; js.async = true;
+                    js.src = '//connect.facebook.net/ru_RU/all.js#xfbml=1';
+                    d.getElementsByTagName('head')[0].appendChild(js);
+                    }(document));
+                    </script>
+                    <div class='fb-like' data-send='false' data-layout='button_count'  data-width='100' data-show-faces='false'></div>
+                </div>
+                <div class="footer-social-item footer-social-item-side">
+                    <a href='https://twitter.com/share' class='twitter-share-button' data-count='horizontal' data-lang='ru'>Tweet</a><script type='text/javascript' src='//platform.twitter.com/widgets.js'></script>
+                </div>
+                <div class="footer-social-item footer-social-item-side">
+                    <g:plusone size="medium"></g:plusone>
+
+                    <script type="text/javascript">
+                        window.___gcfg = {lang: 'ru'};
+
+                        (function() {
+                            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                            po.src = 'https://apis.google.com/js/plusone.js';
+                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                        })();
+                    </script>
+                </div>
+                <div class="copyrights">© Dr.Nona Market Inc. Все права защищены.</div>
+            </div>
+
+            <div class="footer-email"><a href="#">help@drnona.ru</a></div>
+            <div class="developer">Разработка сайта: <a href="#">Renaissance AG</a></div>
+
+        </div>
+        <!-- footer END -->
+
+        <!-- incart window -->
+        <div class="incart-window">
+            <div class="incart-window-container">
+                <div class="incart-window-title">Спасибо, продукт в корзине!</div>
+                <div class="incart-window-content">
+                    <div class="incart-window-item">
+                        <div class="incart-window-item-photo"><img src="files/incart-item.jpg" alt="" width="80" height="85" /></div>
+                        <div class="incart-window-item-info">
+                            <div class="incart-window-item-name">Динамический увлажняющий бальзам</div>
+                            <div class="incart-window-item-name-eng">Dynamic hydrating cream</div>
+                        </div>
+                    </div>
+                    <div class="incart-window-ctrl">
+                        <div class="incart-window-ctrl-continue"><a href="#">Продолжить покупки</a></div>
+                        <a href="#" class="incart-window-cart"><img src="images/incart-window-cart.png" alt="" width="20" height="20" />Перейти в корзину</a>
+                    </div>
+                    <div class="incart-window-other-title">Отличное сочетание:</div>
+
+                    <!-- catalogue row -->
+                    <div class="catalogue">
+
+                        <!-- catalogue item top -->
+                        <div class="catalogue-item-top">
+                            <div class="catalogue-item-photo"><a href="#"><img src="files/incart-catalogue-1.jpg" alt="" width="70" height="93" /></a></div>
+                            <div class="catalogue-item-text">
+                                <div class="catalogue-item-name"><a href="#">Питательный лосьон для тела морская соль для тела морская соль</a></div>
+                            </div>
+                        </div>
+                        <!-- catalogue item top END -->
+
+                        <!-- catalogue item top -->
+                        <div class="catalogue-item-top">
+                            <div class="catalogue-item-photo"><a href="#"><img src="files/incart-catalogue-2.jpg" alt="" width="58" height="87" /></a></div>
+                            <div class="catalogue-item-text">
+                                <div class="catalogue-item-name"><a href="#">Динамический увлажняющий крем</a></div>
+                            </div>
+                        </div>
+                        <!-- catalogue item top END -->
+
+                    </div>
+
+                    <div class="catalogue">
+
+                        <!-- catalogue item bottom -->
+                        <div class="catalogue-item-bottom">
+                            <div class="catalogue-item-ctrl">
+                                <div class="catalogue-item-price"><span>1200</span>р.</div>
+                                <div class="catalogue-item-buy"><a href="#" rel="В корзине">В корзину</a></div>
+                            </div>
+                        </div>
+                        <!-- catalogue item bottom END -->
+
+                        <!-- catalogue item bottom -->
+                        <div class="catalogue-item-bottom">
+                            <div class="catalogue-item-ctrl">
+                                <div class="catalogue-item-price"><span>2400</span>р.</div>
+                                <div class="catalogue-item-buy"><a href="#" rel="В корзине">В корзину</a></div>
+                            </div>
+                        </div>
+                        <!-- catalogue item bottom END -->
+
+                    </div>
+                    <!-- catalogue row END -->
+
+                </div>
+            </div>
+        </div>
+        <!-- incart window END -->
+
+        <!-- product window -->
+        <div class="product-window">
+            <div class="product-window-container">
+                <!-- catalogue item -->
+                <div class="catalogue-item">
+                    <div class="catalogue-item-photo"><img src="files/product-window.jpg" alt="" width="530" height="530" /></div>
+                    <div class="catalogue-item-text">
+                        <div class="catalogue-item-name">Динамический увлажняющий крем</div>
+                        <div class="catalogue-item-name-eng">Dynamic hydrating cream</div>
+                    </div>
+                    <div class="catalogue-item-ctrl">
+                        <div class="catalogue-item-price"><span>1800</span>р.</div>
+                        <div class="catalogue-item-buy"><a href="#" rel="В корзине">В корзину</a></div>
+                    </div>
+                </div>
+                <!-- catalogue item END -->
+            </div>
+        </div>
+        <!-- product window END -->
+
+    </body>
+</html>
