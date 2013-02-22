@@ -18,7 +18,10 @@ body,
 .product-block-social,
 .product-ctrl,
 .product-side-block-order,
-.product-side-block-social {display:none}
+.product-side-block-social,
+.side {display:none}
+
+.side+.content {width:100%}
 
 .order-form-cart {padding-left:0}
 
