@@ -144,6 +144,21 @@ var availableCities = [
             return false;
         });
 
+        // купон
+        $('.cart-coupon-input input').focus(function() {
+            $('.cart-coupon-input label').css({'display': 'none'});
+        });
+
+        $('.cart-coupon-submit a').click(function() {
+            var curCoupon = $('.cart-coupon-input input').val();
+            if (curCoupon == 'CP-RTSIE-GOEYXE') {
+                $('.cart-coupon-input .valid').css({'display': 'block'});
+            } else {
+                $('.cart-coupon-input .error').css({'display': 'block'});
+            }
+            return false;
+        });
+
         // пример открытия окна при нажатии на фото на странице продукта
         $('.product-side-big .catalogue-item-photo a').click(function() {
             windowOpen($('.product-window').html());
@@ -427,6 +442,49 @@ var availableCities = [
             });
 
             return false;
+        });
+
+        // окно авторизации
+        $('.top-line-login a').click(function() {
+            windowOpen($('.login-window').html());
+            return false;
+        });
+
+        $('.window .login-window-cancel a').live('click', function() {
+            windowClose();
+            return false;
+        });
+
+        $('.window .login-form-forgot-link a').live('click', function() {
+            $('.window .login-form-forgot').show();
+            recalcWindow();
+            return false;
+        });
+
+        $('.window .login-form-sms').live('click', function() {
+            if ($(this).parent().find('input').val() == '12FA') {
+                $('.window .login-form-forgot-valid').show();
+                recalcWindow();
+            }
+            return false;
+        });
+
+        $('.news-load-link a').live('click', function() {
+            var curLink = $(this);
+            curLink.parent().before('<div class="news-load"></div>');
+            $('.news-load:last').load(curLink.attr('href'), function() {
+                $('.news-load:last').slideDown();
+                curLink.parent().remove();
+            });
+            return false;
+        });
+
+        // форма в кабинете
+        $('.cabinet-form form').validate({
+            messages: {
+                name: 'Это обязательное поле!',
+                email: 'Это обязательное поле!'
+            }
         });
 
     });

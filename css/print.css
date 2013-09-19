@@ -19,7 +19,9 @@ body,
 .product-ctrl,
 .product-side-block-order,
 .product-side-block-social,
-.side {display:none}
+.side,
+.news-back-link,
+.news-load-link {display:none}
 
 .side+.content {width:100%}
 

@@ -13,7 +13,7 @@
         <script type="text/javascript" src="js/jquery.animate-colors-min.js"></script>
         <script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
         <script type="text/javascript" src="js/tools.js"></script>
-        
+
         <meta name="viewport" content="width=1000" />
     </head>
 
@@ -23,13 +23,14 @@
         <div class="wrapper">
 
             <!-- top line -->
-            <div class="top-line">
+            <div class="top-line top-line-2">
                 <div class="top-line-inner">
                     <div class="top-line-link"><a href="#">О Dr.Nona</a></div>
                     <div class="top-line-link"><a href="#">Доставка и оплата</a></div>
 
-                    <div class="top-line-registration"><a href="#">Регистрация</a></div>
-                    <div class="top-line-login"><a href="#">Вход в личный кабинет</a></div>
+                    <div class="top-line-logout"><a href="#">Выход</a></div>
+                    <div class="top-line-profile"><a href="#">Ваш личный кабинет</a></div>
+                    <div class="top-line-welcome">Здравствуйте, Валерия!</div>
                 </div>
             </div>
             <!-- top line END -->
@@ -141,7 +142,7 @@
                 <!-- top -->
                 <div class="top">
                     <ul>
-                        <li class="active"><a href="#">Косметика</a></li>
+                        <li><a href="#">Косметика</a></li>
                         <li><a href="#">Парфюмерия</a></li>
                         <li><a href="#">Диетические добавки</a></li>
                     </ul>
@@ -155,198 +156,178 @@
                 </div>
                 <!-- top END -->
 
-                <!-- rubrics -->
-                <div class="rubrics">
-                    <ul>
-                        <li><a href="#">Уход за лицом</a></li>
-                        <li class="active"><a href="#">Уход за телом</a></li>
-                        <li><a href="#">Уход за волосами</a></li>
-                        <li><a href="#">Средства личной гигиены</a></li>
-                    </ul>
-                </div>
-                <!-- rubrics END -->
+                <!-- middle -->
+                <div class="middle">
 
-                <!-- catalogue row -->
-                <div class="catalogue">
+                    <!-- side -->
+                    <div class="side">
 
-                    <!-- catalogue item top -->
-                    <div class="catalogue-item-top">
-                        <div class="catalogue-item-photo"><a href="#"><img src="files/catalogue-tag-1.jpg" alt="" width="200" height="200" /></a></div>
-                        <div class="catalogue-item-text">
-                            <div class="catalogue-item-name"><a href="#">Клисин</a></div>
-                            <div class="catalogue-item-name-eng">Cleanseen</div>
-                            <div class="catalogue-item-tag"><span class="catalogue-item-tag-color-1">зрительная функция</span></div>
+                        <!-- cabinet side -->
+                        <div class="cabinet-side">
+                            <div class="cabinet-side-container">
+                                <div class="cabinet-side-content">
+                                    <div class="cabinet-side-title">Добро пожаловать<br />в личный кабинет!</div>
+                                    <div class="cabinet-side-menu">
+                                        <ul>
+                                            <li><img src="images/cabinet-menu-1-a.png" alt="" width="30" height="30" />Личные данные</li>
+                                            <li><img src="images/cabinet-menu-2.png" alt="" width="30" height="30" /><a href="#">Адрес доставки</a></li>
+                                            <li><img src="images/cabinet-menu-3.png" alt="" width="30" height="30" /><a href="#">История заказов</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="cabinet-side-logout"><a href="#">Выход</a></div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <!-- catalogue item top END -->
+                        <!-- cabinet side END -->
 
-                    <!-- catalogue item top -->
-                    <div class="catalogue-item-top">
-                        <div class="catalogue-item-photo"><a href="#"><img src="files/catalogue-tag-2.jpg" alt="" width="185" height="185" /></a></div>
-                        <div class="catalogue-item-text">
-                            <div class="catalogue-item-name"><a href="#">Чай «Гонсин»</a></div>
-                            <div class="catalogue-item-name-eng">Gonseen tea</div>
-                            <div class="catalogue-item-tag"><span class="catalogue-item-tag-color-2">комплексное оздоровление</span></div>
+                    </div>
+                    <!-- side END -->
+
+                    <!-- content -->
+                    <div class="content">
+
+                        <div class="cabinet-title">
+                            Личный кабинет
+                            <img src="images/cabinet-title-sep.png" alt="" width="20" height="14" />
+                            <span>Личные данные</span>
                         </div>
-                    </div>
-                    <!-- catalogue item top END -->
 
-                    <!-- catalogue item top -->
-                    <div class="catalogue-item-top">
-                        <div class="catalogue-item-photo"><a href="#"><img src="files/catalogue-tag-3.jpg" alt="" width="200" height="200" /></a></div>
-                        <div class="catalogue-item-text">
-                            <div class="catalogue-item-name"><a href="#">Фемсин</a></div>
-                            <div class="catalogue-item-name-eng">Feemseen</div>
-                            <div class="catalogue-item-tag"><span class="catalogue-item-tag-color-1">зрительная функция</span></div>
+                        <!-- cabinet -->
+                        <div class="cabinet">
+
+                            <!-- cabinet form -->
+                            <div class="cabinet-form">
+                                <form action="#" method="post">
+
+                                    <div class="order-form-row">
+                                        <div class="order-form-label">Имя</div>
+                                        <div class="order-form-input">
+                                            <input type="text" name="name" value="" class="required" />
+                                        </div>
+                                    </div>
+                                    <div class="order-form-row">
+                                        <div class="order-form-label">Фамилия</div>
+                                        <div class="order-form-input">
+                                            <input type="text" name="lastname" value="" />
+                                        </div>
+                                    </div>
+                                    <div class="order-form-row">
+                                        <div class="order-form-label">Телефон</div>
+                                        <div class="order-form-input">
+                                            <input type="text" name="phone" value="" />
+                                            <div class="order-form-hint">Укажите контактный телефон для связи с Вами</div>
+                                        </div>
+                                    </div>
+                                    <div class="order-form-row">
+                                        <div class="order-form-label">E-mail</div>
+                                        <div class="order-form-input">
+                                            <input type="text" name="email" value="" class="required email" />
+                                        </div>
+                                    </div>
+                                    <div class="order-form-row">
+                                        <div class="order-form-label">Пароль</div>
+                                        <div class="order-form-input">
+                                            <input type="password" name="password" value="" />
+                                        </div>
+                                    </div>
+                                    <div class="order-form-row">
+                                        <div class="order-form-label">День рождения</div>
+                                        <div class="order-form-input order-form-input-2">
+                                            <input type="text" name="birthDay" value="" />
+                                        </div>
+                                        <div class="order-form-input order-form-input-3">
+                                            <input type="text" name="birthMonth" value="" />
+                                        </div>
+                                        <div class="order-form-input order-form-input-4">
+                                            <input type="text" name="birthYear" value="" />
+                                        </div>
+                                    </div>
+
+                                    <div class="cabinet-form-submit">
+                                        <input type="submit" value="Сохранить изменения" />
+                                    </div>
+
+                                </form>
+                            </div>
+                            <!-- cabinet form END -->
+
+                            <div class="cabinet-orders-top">
+                                <div class="cabinet-orders-top-title">Ваш последний заказ</div>
+                                <div class="cabinet-orders-top-all"><a href="#">Вся история заказов</a></div>
+                            </div>
+
+                            <!-- cabinet order -->
+                            <div class="cabinet-order">
+                                <div class="cabinet-order-top">
+                                    <div class="cabinet-order-top-number">Заказ №0021</div>
+                                    <div class="cabinet-order-top-date">Дата заказа: 23.02.2012</div>
+                                </div>
+
+                                <div class="cabinet-order-list">
+                                    <div class="cabinet-order-item">
+                                        <table>
+                                            <tr>
+                                                <td class="cabinet-order-item-photo"><a href="#"><img src="files/header-cart-1.jpg" alt="" width="32" height="52" /></a></td>
+                                                <td class="cabinet-order-item-content">
+                                                    <div class="cabinet-order-item-content-inner">
+                                                        <div class="cabinet-order-item-name"><a href="#">Лосьон для тела «солярис»</a> <span>(2 шт.)</span></div>
+                                                        <div class="cabinet-order-item-cost">3600р.</div>
+                                                    </div>
+                                                </td>
+                                                <td class="cabinet-order-item-buy">
+                                                    <div class="cabinet-item-buy"><a href="#" rel="В корзине">В корзину</a></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="cabinet-order-item">
+                                        <table>
+                                            <tr>
+                                                <td class="cabinet-order-item-photo"><a href="#"><img src="files/header-cart-2.jpg" alt="" width="32" height="43" /></a></td>
+                                                <td class="cabinet-order-item-content">
+                                                    <div class="cabinet-order-item-content-inner">
+                                                        <div class="cabinet-order-item-name"><a href="#">Питальтельный лосьон для тела</a> <span>(1 шт.)</span></div>
+                                                        <div class="cabinet-order-item-cost">2400р.</div>
+                                                    </div>
+                                                </td>
+                                                <td class="cabinet-order-item-buy">
+                                                    <div class="cabinet-item-buy"><a href="#" rel="В корзине">В корзину</a></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="cabinet-order-item">
+                                        <table>
+                                            <tr>
+                                                <td class="cabinet-order-item-photo"><a href="#"><img src="files/header-cart-3.jpg" alt="" width="32" height="48" /></a></td>
+                                                <td class="cabinet-order-item-content">
+                                                    <div class="cabinet-order-item-content-inner">
+                                                        <div class="cabinet-order-item-name"><a href="#">Динамический увлажняющий крем</a> <span>(1 шт.)</span></div>
+                                                        <div class="cabinet-order-item-cost">2400р.</div>
+                                                    </div>
+                                                </td>
+                                                <td class="cabinet-order-item-buy">
+                                                    <div class="cabinet-item-buy"><a href="#" rel="В корзине">В корзину</a></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="cabinet-order-item">
+                                        <div class="cabinet-order-item-summ">Итого:</div>
+                                        <div class="cabinet-order-item-summ-cost">8700р.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- cabinet order END -->
+
                         </div>
+                        <!-- cabinet END -->
+
                     </div>
-                    <!-- catalogue item top END -->
-
-                    <!-- catalogue item top -->
-                    <div class="catalogue-item-top">
-                        <div class="catalogue-item-photo"><a href="#"><img src="files/catalogue-tag-4.jpg" alt="" width="200" height="200" /></a></div>
-                        <div class="catalogue-item-text">
-                            <div class="catalogue-item-name"><a href="#">Оксин</a></div>
-                            <div class="catalogue-item-name-eng">Okseen</div>
-                            <div class="catalogue-item-tag"><span class="catalogue-item-tag-color-2">комплексное оздоровление</span></div>
-                        </div>
-                    </div>
-                    <!-- catalogue item top END -->
-
-                </div>
-
-                <div class="catalogue">
-
-                    <!-- catalogue item bottom -->
-                    <div class="catalogue-item-bottom">
-                        <div class="catalogue-item-ctrl">
-                            <div class="catalogue-item-price"><span>1800</span>р.</div>
-                            <div class="catalogue-item-buy"><a href="#" rel="В корзине">В корзину</a></div>
-                        </div>
-                    </div>
-                    <!-- catalogue item bottom END -->
-
-                    <!-- catalogue item bottom -->
-                    <div class="catalogue-item-bottom">
-                        <div class="catalogue-item-ctrl">
-                            <div class="catalogue-item-price"><span>2350</span>р.</div>
-                            <div class="catalogue-item-buy"><a href="#" rel="В корзине">В корзину</a></div>
-                        </div>
-                    </div>
-                    <!-- catalogue item bottom END -->
-
-                    <!-- catalogue item bottom -->
-                    <div class="catalogue-item-bottom">
-                        <div class="catalogue-item-ctrl">
-                            <div class="catalogue-item-price"><span>3100</span>р.</div>
-                            <div class="catalogue-item-buy"><a href="#" rel="В корзине">В корзину</a></div>
-                        </div>
-                    </div>
-                    <!-- catalogue item bottom END -->
-
-                    <!-- catalogue item bottom -->
-                    <div class="catalogue-item-bottom">
-                        <div class="catalogue-item-ctrl">
-                            <div class="catalogue-item-price"><span>1250</span>р.</div>
-                            <div class="catalogue-item-buy"><a href="#" rel="В корзине">В корзину</a></div>
-                        </div>
-                    </div>
-                    <!-- catalogue item bottom END -->
-
-                </div>
-                <!-- catalogue row END -->
-                
-                <div class="catalogue-sep"></div>
-
-                <!-- catalogue row -->
-                <div class="catalogue">
-
-                    <!-- catalogue item top -->
-                    <div class="catalogue-item-top">
-                        <div class="catalogue-item-photo"><a href="#"><img src="files/catalogue-tag-3.jpg" alt="" width="200" height="200" /></a></div>
-                        <div class="catalogue-item-text">
-                            <div class="catalogue-item-name"><a href="#">Чай «Стопсин»</a></div>
-                            <div class="catalogue-item-name-eng">Stop-seen tea</div>
-                            <div class="catalogue-item-tag"><span class="catalogue-item-tag-color-3">похудение</span></div>
-                        </div>
-                    </div>
-                    <!-- catalogue item top END -->
-
-                    <!-- catalogue item top -->
-                    <div class="catalogue-item-top">
-                        <div class="catalogue-item-photo"><a href="#"><img src="files/catalogue-5.jpg" alt="" width="145" height="200" /></a></div>
-                        <div class="catalogue-item-text">
-                            <div class="catalogue-item-name"><a href="#">Чай «Гонсин»</a></div>
-                            <div class="catalogue-item-name-eng">Gonseen tea</div>
-                            <div class="catalogue-item-tag"><span class="catalogue-item-tag-color-3">похудение</span></div>
-                        </div>
-                    </div>
-                    <!-- catalogue item top END -->
-
-                    <!-- catalogue item top -->
-                    <div class="catalogue-item-top">
-                        <div class="catalogue-item-photo"><a href="#"><img src="files/hit-1.jpg" alt="" width="135" height="202" /></a></div>
-                        <div class="catalogue-item-text">
-                            <div class="catalogue-item-name"><a href="#">Супсин</a></div>
-                            <div class="catalogue-item-name-eng">Soupseen</div>
-                            <div class="catalogue-item-tag"><span class="catalogue-item-tag-color-1">зрительная функция</span></div>
-                        </div>
-                    </div>
-                    <!-- catalogue item top END -->
-
-                    <!-- catalogue item top -->
-                    <div class="catalogue-item-top">
-                        <div class="catalogue-item-photo"><a href="#"><img src="files/catalogue-tag-5.jpg" alt="" width="200" height="200" /></a></div>
-                        <div class="catalogue-item-text">
-                            <div class="catalogue-item-name"><a href="#">Оксин морская соль для ванн</a></div>
-                            <div class="catalogue-item-name-eng">Okseen</div>
-                            <div class="catalogue-item-tag"><span class="catalogue-item-tag-color-2">комплексное оздоровление</span></div>
-                        </div>
-                    </div>
-                    <!-- catalogue item top END -->
-
-                </div>
-
-                <div class="catalogue">
-
-                    <!-- catalogue item bottom -->
-                    <div class="catalogue-item-bottom">
-                        <div class="catalogue-item-ctrl">
-                            <div class="catalogue-item-price"><span>1800</span>р.</div>
-                            <div class="catalogue-item-buy"><a href="#" rel="В корзине">В корзину</a></div>
-                        </div>
-                    </div>
-                    <!-- catalogue item bottom END -->
-
-                    <!-- catalogue item bottom -->
-                    <div class="catalogue-item-bottom">
-                        <div class="catalogue-item-ctrl">
-                            <div class="catalogue-item-price"><span>2350</span>р.</div>
-                            <div class="catalogue-item-buy"><a href="#" rel="В корзине">В корзину</a></div>
-                        </div>
-                    </div>
-                    <!-- catalogue item bottom END -->
-
-                    <!-- catalogue item bottom -->
-                    <div class="catalogue-item-bottom">
-                        <div class="catalogue-item-ctrl">
-                            <div class="catalogue-item-price"><span>3100</span>р.</div>
-                            <div class="catalogue-item-buy"><a href="#" rel="В корзине">В корзину</a></div>
-                        </div>
-                    </div>
-                    <!-- catalogue item bottom END -->
-
-                    <!-- catalogue item bottom -->
-                    <div class="catalogue-item-bottom">
-                        <div class="catalogue-item-ctrl">
-                            <div class="catalogue-item-price"><span>1250</span>р.</div>
-                            <div class="catalogue-item-buy"><a href="#" rel="В корзине">В корзину</a></div>
-                        </div>
-                    </div>
-                    <!-- catalogue item bottom END -->
+                    <!-- content END -->
 
                 </div>
-                <!-- catalogue row END -->
+                <!-- middle END -->
 
             </div>
         </div>
@@ -399,74 +380,28 @@
         </div>
         <!-- footer END -->
 
-        <!-- incart window -->
-        <div class="incart-window">
-            <div class="incart-window-container">
-                <div class="incart-window-title">Спасибо, продукт в корзине!</div>
-                <div class="incart-window-content">
-                    <div class="incart-window-item">
-                        <div class="incart-window-item-photo"><img src="files/incart-item.jpg" alt="" width="80" height="85" /></div>
-                        <div class="incart-window-item-info">
-                            <div class="incart-window-item-name">Динамический увлажняющий бальзам</div>
-                            <div class="incart-window-item-name-eng">Dynamic hydrating cream</div>
+        <!-- window email -->
+        <div class="window-email">
+            <div class="window-email-container">
+                <div class="window-email-form">
+                    <form action="#" method="post">
+                        <div class="window-email-title">Восстановление пароля</div>
+                        <div class="window-email-label">Введите Ваш e-mail:</div>
+                        <div class="window-email-input"><input type="text" name="email" value="" /></div>
+                        <div class="window-email-ctrl">
+                            <div class="window-email-submit"><input type="submit" value="Восстановить пароль" /></div>
+                            <div class="window-email-cancel"><a href="#">Отмена</a></div>
                         </div>
-                    </div>
-                    <div class="incart-window-ctrl">
-                        <div class="incart-window-ctrl-continue"><a href="#">Продолжить покупки</a></div>
-                        <a href="#" class="incart-window-cart"><img src="images/incart-window-cart.png" alt="" width="20" height="20" />Перейти в корзину</a>
-                    </div>
-                    <div class="incart-window-other-title">Отличное сочетание:</div>
-
-                    <!-- catalogue row -->
-                    <div class="catalogue">
-
-                        <!-- catalogue item top -->
-                        <div class="catalogue-item-top">
-                            <div class="catalogue-item-photo"><a href="#"><img src="files/incart-catalogue-1.jpg" alt="" width="70" height="93" /></a></div>
-                            <div class="catalogue-item-text">
-                                <div class="catalogue-item-name"><a href="#">Питательный лосьон для тела морская соль для тела морская соль</a></div>
-                            </div>
-                        </div>
-                        <!-- catalogue item top END -->
-
-                        <!-- catalogue item top -->
-                        <div class="catalogue-item-top">
-                            <div class="catalogue-item-photo"><a href="#"><img src="files/incart-catalogue-2.jpg" alt="" width="58" height="87" /></a></div>
-                            <div class="catalogue-item-text">
-                                <div class="catalogue-item-name"><a href="#">Динамический увлажняющий крем</a></div>
-                            </div>
-                        </div>
-                        <!-- catalogue item top END -->
-
-                    </div>
-
-                    <div class="catalogue">
-
-                        <!-- catalogue item bottom -->
-                        <div class="catalogue-item-bottom">
-                            <div class="catalogue-item-ctrl">
-                                <div class="catalogue-item-price"><span>1200</span>р.</div>
-                                <div class="catalogue-item-buy"><a href="#" rel="В корзине">В корзину</a></div>
-                            </div>
-                        </div>
-                        <!-- catalogue item bottom END -->
-
-                        <!-- catalogue item bottom -->
-                        <div class="catalogue-item-bottom">
-                            <div class="catalogue-item-ctrl">
-                                <div class="catalogue-item-price"><span>2400</span>р.</div>
-                                <div class="catalogue-item-buy"><a href="#" rel="В корзине">В корзину</a></div>
-                            </div>
-                        </div>
-                        <!-- catalogue item bottom END -->
-
-                    </div>
-                    <!-- catalogue row END -->
-
+                    </form>
+                </div>
+                <div class="window-email-success">На Ваш e-mail:&nbsp; <a href="#">ivanova.inna@yandex.ru</a><br />отправлено письмо с паролем.</div>
+                <div class="window-email-error">
+                    <div class="window-email-error-text">Пользователь&nbsp; <a href="#">ivanova.inna@yandex.ru</a><br />у нас пока не зарегистрирован</div>
+                    <div class="window-email-error-back"><a href="#">Вернуться и продолжить оформление</a></div>
                 </div>
             </div>
         </div>
-        <!-- incart window END -->
+        <!-- window email END -->
 
         <!-- login window -->
         <div class="login-window">
