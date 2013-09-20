@@ -235,6 +235,9 @@ img {border:none}
 .cart-cost {float:left; width:97px; padding:47px 0 0 23px; font-size:18px; line-height:18px; color:#d6b265}
 .cart-cost span {font-size:22px}
 .cart-row-discount .cart-cost {color:#c16f6f}
+.cart-cost-coupon {display:none; color:#585858; padding:0 0 4px 0}
+.cart-cost-with-coupon .cart-cost-coupon {display:block}
+.cart-cost-with-coupon .cart-cost-current {text-decoration:line-through}
 .cart-date {float:left; width:119px; padding:47px 0 0 22px; font-size:22px; line-height:18px; color:#9c9c9c}
 .cart-delete {float:left; padding:36px 0 0 30px}
 .cart-delete a {display:block; width:31px; height:31px; background:url(../images/cart-delete.png)}

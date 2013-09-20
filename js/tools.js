@@ -153,8 +153,10 @@ var availableCities = [
             var curCoupon = $('.cart-coupon-input input').val();
             if (curCoupon == 'CP-RTSIE-GOEYXE') {
                 $('.cart-coupon-input .valid').css({'display': 'block'});
+                $('.cart-cost-coupon').parent().addClass('cart-cost-with-coupon');
             } else {
                 $('.cart-coupon-input .error').css({'display': 'block'});
+                $('.cart-cost-coupon').parent().removeClass('cart-cost-with-coupon');
             }
             return false;
         });
@@ -523,12 +525,12 @@ var availableCities = [
         var curCount = 0;
         $('.cart-row').each(function() {
             if (!$(this).hasClass('cart-row-discount') && !$(this).hasClass('cart-row-gift')) {
-                curSumm += Number($(this).find('.cart-cost span').html());
+                curSumm += Number($(this).find('.cart-cost span:visible:first').html());
                 curCount += Number($(this).find('.cart-count input').val());
             }
         });
         if ($('.cart-row-discount').length == 1) {
-            $('.cart-row-discount .cart-cost span').html('-' + Math.round(curSumm * (Number($('.cart-row-discount .cart-info-name span').html()) / 100)));
+            $('.cart-row-discount .cart-cost span:visible:first span').html('-' + Math.round(curSumm * (Number($('.cart-row-discount .cart-info-name span').html()) / 100)));
         }
         $('.cart-ctrl-summ-count').html(curCount);
         $('.cart-ctrl-summ-cost').html(curSumm - Math.round(curSumm * (Number($('.cart-row-discount .cart-info-name span').html()) / 100)));
