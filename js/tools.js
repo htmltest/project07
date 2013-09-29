@@ -293,6 +293,8 @@ var availableCities = [
         $('.order-form form').validate({
             messages: {
                 name: 'Это обязательное поле!',
+                lastname: 'Это обязательное поле!',
+                phone: 'Это обязательное поле!',
                 email: 'Это обязательное поле!',
                 city: 'Это обязательное поле!',
                 address: 'Вы забыли указать адрес!<br />Куда доставить ваш заказ?'
@@ -486,6 +488,25 @@ var availableCities = [
             messages: {
                 name: 'Это обязательное поле!',
                 email: 'Это обязательное поле!'
+            }
+        });
+
+        // окно смены телефона
+        $('.window .login-form-right-phone a').live('click', function() {
+            windowClose();
+            windowOpen($('.phone-window').html());
+            return false;
+        });
+
+        $('.catalogue-item-discount').each(function() {
+            var curItemTop = $(this).parent();
+            if (curItemTop.hasClass('catalogue-item-top')) {
+                var curItemCatalogue = curItemTop.parent();
+                var curIndexTop = curItemCatalogue.find('.catalogue-item-top').index(curItemTop);
+                var nextItemCatalogue = curItemCatalogue.next();
+                $(this).height(curItemCatalogue.height() + nextItemCatalogue.height() - 23)
+            } else {
+                $(this).height(curItemTop.height() + 15)
             }
         });
 

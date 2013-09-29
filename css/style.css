@@ -159,9 +159,10 @@ img {border:none}
 .catalogue-item {float:left; width:243px; height:354px; position:relative; margin:19px 2px 18px 2px}
 .catalogue-item-top {float:left; width:243px; margin:19px 2px 0 2px; position:relative}
 .catalogue-item-bottom {float:left; width:243px; margin:0 2px 18px 2px; position:relative}
-.catalogue-item-discount {position:absolute; left:0; top:0; width:243px; height:354px; background:url(../images/catalogue-item-discount.png)}
-.catalogue-item-discount-2 {background:url(../images/catalogue-item-discount-2.png)}
+.catalogue-item-discount {position:absolute; left:0; top:0; width:243px; height:354px; background:#fceed0 url(../images/catalogue-item-discount.png) no-repeat; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px; behavior:url(./js/PIE.htc)}
+.catalogue-item-discount-2 {background:#d5ebf5 url(../images/catalogue-item-discount-2.png) no-repeat}
 .catalogue-item-photo {text-align:center; line-height:227px; height:227px; position:relative; overflow:hidden}
+.catalogue-item-photo a {background:none}
 .catalogue-item-photo img {vertical-align:middle}
 .catalogue-item-photo img:hover {opacity:.5; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50)}
 .catalogue-item-text {position:relative; text-align:center}
@@ -280,7 +281,7 @@ img {border:none}
 
 .side {float:right; width:243px; padding:36px 0 0 0}
 .side-fix {position:fixed; z-index:8; top:46px; left:0; padding:0}
-.side .catalogue-item {float:none; margin:0 0 11px 0}
+.side .catalogue-item {float:none; margin:0 0 11px 0; padding:0 0 15px 0; height:auto}
 
 .product-side {float:left; width:220px; padding:0 0 30px 0}
 .product-side-big {margin:-17px 0 0 0}
@@ -421,22 +422,17 @@ img {border:none}
 .order-steps ul li.curr div strong {font-weight:bold}
 
 .order-user {position:relative; background:#f5fbfa; -webkit-box-shadow:inset 0 0 35px rgba(213, 231, 229, .8); -moz-box-shadow:inset 0 0 35px rgba(213, 231, 229, .8); box-shadow:inset 0 0 35px rgba(213, 231, 229, .8); border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px; behavior:url(./js/PIE.htc)}
-.order-user-form {padding:21px 0 0 30px}
-.order-user-form form {margin:0; padding:0}
+.order-user-form {padding:21px 0 22px 30px}
 .order-user-form-title {font-size:21px; color:#414141; line-height:23px}
 .order-user-form-hint {font-size:14px; color:#82a19e}
 .order-user-form-hint span {color:#b8a272}
-.order-user-row {width:100%; padding:9px 0 0 0}
+.order-user-row {width:100%}
 .order-user-row:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
-.order-user-input {float:left; margin:3px 11px 0 0; position:relative; background:#fff; border:1px solid #c2c2c2; -webkit-box-shadow:0 0 8px rgba(0, 0, 0, .11); -moz-box-shadow:0 0 8px rgba(0, 0, 0, .11); box-shadow:0 0 8px rgba(0, 0, 0, .11); border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px; -khtml-border-radius:8px; behavior:url(./js/PIE.htc)}
-.order-user-input span {display:none; position:absolute; left:13px; top:7px; font-size:14px; line-height:20px; color:#70a59c}
-.order-user-input input {position:relative; border:none; background:url(../images/blank.gif); height:20px; padding:7px 13px 4px 13px; width:175px; color:#414141; font:14px/20px "calibri", arial, helvetica, sans-serif; vertical-align:top; margin:0; outline:none}
-.order-user-submit {float:left; padding:0 0 0 13px; position:relative}
-.order-user-submit input {border:none; background:url(../images/order-user-submit.png); vertical-align:top; width:187px; margin:0; padding:0 0 0 46px; height:35px; font:14px/38px "calibri", arial, helvetica, sans-serif; color:#fff; text-shadow:0 1px 1px rgba(0, 0, 0, .4); text-align:left; cursor:pointer; outline:none; -webkit-box-shadow:0 1px 1px rgba(0, 0, 0, .33); -moz-box-shadow:0 1px 1px rgba(0, 0, 0, .33); box-shadow:0 1px 1px rgba(0, 0, 0, .33); border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px; behavior:url(./js/PIE.htc)}
-.order-user-submit input:hover {background-position:left -35px}
-.order-user-row-links {font-size:13px; text-align:right; width:417px; padding:2px 0 15px 0}
-.order-user-row-links a {color:#82a19e; background:url(../images/order-user-row-links.png) repeat-x left bottom}
-.order-user-row-links a:hover {background:none}
+.order-user-submit {float:left; position:relative}
+.order-user-submit a {display:block; background:url(../images/order-user-submit.png); width:141px; padding:0 0 0 46px; height:35px; font:14px/38px "calibri", arial, helvetica, sans-serif; color:#fff; text-shadow:0 1px 1px rgba(0, 0, 0, .4); text-align:left; text-decoration:none; cursor:pointer; outline:none; -webkit-box-shadow:0 1px 1px rgba(0, 0, 0, .33); -moz-box-shadow:0 1px 1px rgba(0, 0, 0, .33); box-shadow:0 1px 1px rgba(0, 0, 0, .33); border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px; behavior:url(./js/PIE.htc)}
+.order-user-submit a:hover {background-position:left -35px}
+.order-user-left {float:left; width:445px}
+.order-user-right {float:left; padding:3px 0 0 0}
 
 .order-form {padding:30px 0 0 0}
 .order-form form {margin:0; padding:0}
@@ -448,6 +444,7 @@ img {border:none}
 .order-form-row {width:100%; padding:0 0 14px 0}
 .order-form-row:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .order-form-label {float:left; font-size:16px; line-height:33px; color:#414141; width:103px}
+.order-form-label span {color:#5da7a0}
 .order-form-input {float:left; width:323px; position:relative}
 .order-form-input input {border:1px solid #c2c2c2; height:20px; padding:7px 13px 4px 13px; width:295px; color:#414141; font:14px/20px "calibri", arial, helvetica, sans-serif; vertical-align:top; background:#fff; -webkit-box-shadow:0 0 8px rgba(0, 0, 0, .11); -moz-box-shadow:0 0 8px rgba(0, 0, 0, .11); box-shadow:0 0 8px rgba(0, 0, 0, .11); border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px; -khtml-border-radius:8px; behavior:url(./js/PIE.htc); margin:0; outline:none}
 .order-form-input input.error {border-color:#f75e5e}
@@ -695,6 +692,8 @@ a.login-form-sms:hover {background-position:left -35px}
 .order-form-input-3 input {width:141px}
 .order-form-input-4 {width:79px}
 .order-form-input-4 input {width:51px}
+.order-form-input-5 {width:243px}
+.order-form-input-5 input {width:215px}
 .cabinet-form-submit {padding:17px 0 0 0}
 .cabinet-form-submit input {vertical-align:top; overflow:visible; height:40px; cursor:pointer; outline:none; border:none; margin:0; padding:0 22px 1px 22px; position:relative; color:#fff; font:18px/44px "calibri", arial, helvetica, sans-serif; text-shadow:0 1px 1px rgba(0, 0, 0, .4); background:#86c7bc; background:-webkit-gradient(linear, 0 0, 0 100%, from(#86c7bc) to(#368f7f)); background:-webkit-linear-gradient(#86c7bc, #368f7f); background:-moz-linear-gradient(#86c7bc, #368f7f); background:-ms-linear-gradient(#86c7bc, #368f7f); background:-o-linear-gradient(#86c7bc, #368f7f); background:linear-gradient(#86c7bc, #368f7f); -pie-background:linear-gradient(#86c7bc, #368f7f); -webkit-box-shadow:0 1px 1px rgba(0, 0, 0, .33); -moz-box-shadow:0 1px 1px rgba(0, 0, 0, .33); box-shadow:0 1px 1px rgba(0, 0, 0, .33); border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px; behavior:url(./js/PIE.htc)}
 .cabinet-form-submit input:hover {background:#a8dbd2; background:-webkit-gradient(linear, 0 0, 0 100%, from(#a8dbd2) to(#49a292)); background:-webkit-linear-gradient(#a8dbd2, #49a292); background:-moz-linear-gradient(#a8dbd2, #49a292); background:-ms-linear-gradient(#a8dbd2, #49a292); background:-o-linear-gradient(#a8dbd2, #49a292); background:linear-gradient(#a8dbd2, #49a292); -pie-background:linear-gradient(#a8dbd2, #49a292)}
@@ -730,3 +729,33 @@ a.login-form-sms:hover {background-position:left -35px}
 
 .cabinet-order-item-summ {float:left; padding:11px 0 0 0; font-size:21px; width:100px; line-height:21px; color:#414141}
 .cabinet-order-item-summ-cost {float:left; width:464px; padding:11px 0 0 0; text-align:right; font-size:21px; line-height:21px; color:#414141}
+
+.registration-info {background:url(../images/order-fieldset.png) no-repeat; font-size:16px; line-height:29px; margin:6px 0 0 0; color:#414141}
+.registration-info ul {margin:0; padding:25px 0; list-style:none; background:url(../images/order-fieldset.png) no-repeat left bottom}
+.registration-info ul li {padding:0 0 0 37px; margin:0; background:url(../images/registration-info.png) no-repeat left 1px}
+
+.order-form-required {font-size:16px; color:#479d95; padding:23px 0 31px 0}
+.order .order-form-required {padding:29px 0 0 0}
+
+.regisrtation-form form {margin:0; padding:0}
+.regisrtation-form .order-form-label {width:156px}
+
+.order-form-captcha {float:left; width:150px; position:relative; line-height:0; overflow:hidden; border:1px solid #b9b9b9; margin:7px 0 4px 0}
+.order-form-captcha-ctrl {float:left; width:400px; padding:0 0 0 24px}
+.order-form-captcha-title {font-size:14px; color:#414141; padding:8px 0 6px 0}
+.order-form-captcha-ctrl .login-form-input {margin-right:12px}
+a.order-form-sms {float:left; width:183px; height:35px; margin-top:1px; position:relative; background:url(../images/login-form-sms.png); color:#fff; text-align:center; text-shadow:1px 1px 1px rgba(0, 0, 0, .4); font-size:15px; line-height:35px}
+a.order-form-sms:hover {background-position:left -35px}
+
+.registration-form-ctrl {width:100%; background:url(../images/order-fieldset.png) no-repeat; margin:17px 0 0 0; padding:16px 0 0 0}
+.registration-form-ctrl:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.registration-form-ctrl .cabinet-form-submit {float:left}
+.registration-form-cancel {float:left; font-size:18px; line-height:20px; padding:29px 0 0 24px}
+.registration-form-cancel a {color:#0d7f6b; background:url(../images/footer-menu.png) repeat-x left bottom}
+.registration-form-cancel a:hover {background:none}
+
+.phone-window {display:none}
+.phone-window-text {color:#479d95; font-size:14px; line-height:16px; background:url(../images/login-window-line.png) no-repeat center top; margin:16px 0 0 0; padding:20px 0 0 0}
+.phone-window-form form {margin:0; padding:15px 0 0 0}
+.phone-window-form .login-form-left {background:none}
+.phone-window-form .login-window-submit input {width:246px}
