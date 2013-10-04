@@ -510,6 +510,8 @@ var availableCities = [
             }
         });
 
+        $('input[name="phone"]').mask('+7 (999) 999 99 99');
+
     });
 
     // переход к следующему слайду
@@ -581,6 +583,8 @@ var availableCities = [
         });
 
         $('body').bind('keypress keydown', keyDownBody);
+
+        $('.window input[name="phone"]').mask('+7 (999) 999 99 99');
     }
 
     // функция обновления позиции окна
