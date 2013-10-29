@@ -178,7 +178,7 @@
                     <form action="#" method="post">
 
                         <!-- cart row -->
-                        <div class="cart-row">
+                        <div class="cart-row cart-row-coupon-have">
                             <div class="cart-photo"><img src="files/incart-item.jpg" alt="" width="80" height="85" /></div>
                             <div class="cart-info">
                                 <table><tr><td>
@@ -240,7 +240,7 @@
                                 <div class="cart-count-unit">шт.</div>
                             </div>
                             <div class="cart-price"><span>900</span> руб.</div>
-                            <div class="cart-cost"><div class="cart-cost-coupon"><span>500</span> руб.</div><div class="cart-cost-current"><span>900</span> руб.</div></div>
+                            <div class="cart-cost"><span>900</span> руб.</div>
                             <div class="cart-delete"><a href="#"></a></div>
                         </div>
                         <!-- cart row END -->
@@ -274,83 +274,46 @@
                                 <div class="cart-count-unit">шт.</div>
                             </div>
                             <div class="cart-price"><span>2300</span> руб.</div>
-                            <div class="cart-cost"><div class="cart-cost-coupon"><span>2100</span> руб.</div><div class="cart-cost-current"><span>2300</span> руб.</div></div>
+                            <div class="cart-cost"><span>2300</span> руб.</div>
                             <div class="cart-delete"><a href="#"></a></div>
                         </div>
                         <!-- cart row END -->
 
-                        <!-- cart row -->
-                        <div class="cart-row cart-row-gift">
-                            <div class="cart-photo"><img src="images/icon-gift.png" alt="" width="68" height="68" /></div>
-                            <div class="cart-info">
-                                <table><tr><td>
-                                    <div class="cart-info-name">Подарок</div>
-                                    <div class="cart-info-name-eng">Тут какое то текстовое поснение нужно</div>
-                                </td></tr></table>
+                        <!-- cart temp -->
+                        <div class="cart-temp">
+                            <div class="cart-temp-row">
+                                <div class="cart-temp-row-name">Всего:</div>
+                                <div class="cart-temp-row-val cart-temp-summ"><span>6800</span> руб.</div>
                             </div>
-                            <div class="cart-count">
-                                <div class="cart-count-select cart-count-select-disabled">
-                                    <input type="hidden" name="count" value="1" />
-                                    <div>1</div>
-                                    <ul>
-                                        <li class="active" rel="1">1</li>
-                                        <li rel="2">2</li>
-                                        <li rel="3">3</li>
-                                        <li rel="4">4</li>
-                                        <li rel="5">5</li>
-                                        <li rel="6">6</li>
-                                        <li rel="7">7</li>
-                                        <li rel="8">8</li>
-                                        <li rel="9">9</li>
-                                        <li rel="10">10</li>
-                                    </ul>
-                                </div>
-                                <div class="cart-count-unit">шт.</div>
+                            <div class="cart-temp-row">
+                                <div class="cart-temp-row-name">Скидка постоянного покупателя:</div>
+                                <div class="cart-temp-row-val cart-temp-discount"><span rel="3">-204</span> руб.</div>
                             </div>
-                            <div class="cart-price"><span>0</span> руб.</div>
-                            <div class="cart-cost"><span>0</span> руб.</div>
-                        </div>
-                        <!-- cart row END -->
-
-                        <!-- cart row -->
-                        <div class="cart-row cart-row-coupon">
-                            <div class="cart-photo"><img src="images/icon-coupon.png" alt="" width="68" height="68" /></div>
-                            <div class="cart-info">
-                                <table><tr><td>
-                                    <div class="cart-info-name">Купон</div>
-                                    <div class="cart-info-name-eng">Введите промо код, чтобы получить дополнительную скидку</div>
-                                </td></tr></table>
-                            </div>
-                            <div class="cart-coupon-input">
-                                <input type="text" name="coupon" value="CP-RTSIE-GOEYXE" />
-                                <label class="error">Такого купона не существует</label>
-                                <label class="valid">Купон успешно применен!</label>
-                            </div>
-                            <div class="cart-coupon-submit">
-                                <a href="#">Пересчитать</a>
+                            <div class="cart-temp-row cart-temp-row-coupon">
+                                <div class="cart-temp-row-name">Ваша скидка по купону:</div>
+                                <div class="cart-temp-row-val cart-temp-coupon"><span>-1000</span> руб.</div>
                             </div>
                         </div>
-                        <!-- cart row END -->
-
-                        <!-- cart row -->
-                        <div class="cart-row cart-row-discount">
-                            <div class="cart-photo"><img src="images/icon-discount.png" alt="" width="68" height="68" /></div>
-                            <div class="cart-info">
-                                <table><tr><td>
-                                    <div class="cart-info-name">Скидка постоянного покупателя (<span>3</span>%)</div>
-                                </td></tr></table>
-                            </div>
-                            <div class="cart-cost"><span>- 340</span> руб.</div>
-                        </div>
-                        <!-- cart row END -->
+                        <!-- cart temp END -->
 
                         <!-- cart ctrl -->
                         <div class="cart-ctrl">
                             <div class="cart-ctrl-back"><a href="#">Продолжить покупки</a></div>
-                            <div class="cart-ctrl-summ"><strong><span class="cart-ctrl-summ-name">Итого:</span>&nbsp; <span class="cart-ctrl-summ-count">4</span> продукта на общую сумму &nbsp;<span class="cart-ctrl-summ-cost">6800</span></strong> руб.</div>
+                            <div class="cart-ctrl-summ"><strong>Сумма к оплате: <span>6596</span></strong> руб.</div>
                             <div class="cart-ctrl-next"><a href="#">Оформить заказ <img src="images/cart-ctrl-next.png" alt="" width="22" height="16" /></a></div>
                         </div>
                         <!-- cart ctrl END -->
+
+                        <!-- cart coupon -->
+                        <div class="cart-coupon">
+                            <div class="cart-coupon-submit"><a href="#">Пересчитать</a></div>
+                            <div class="cart-coupon-input"><input type="text" name="coupon" value="CP-RTSIE-GOEYXE" /></div>
+                            <div class="cart-coupon-title">У вас есть купон? Введите его здесь:</div>
+                            <div class="cart-coupon-error">Такого купона не существует</div>
+                            <div class="cart-coupon-hint">К сожалению, купон не распространяется<br />на продукты в вашей корзине. Добавьте нужный продукт<br />и получите скидку! Или позвоните нам и мы поможем:<br />8 (495) 749-02-53</div>
+                            <div class="cart-coupon-success">Купон успешно активирован!</div>
+                        </div>
+                        <!-- cart coupon END -->
 
                     </form>
                 </div>
